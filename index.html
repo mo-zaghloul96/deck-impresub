@@ -1,0 +1,2123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>DECK — by IMPRESUB · Where the ocean ends, the report begins.</title>
+<meta name="description" content="A conversational AI co-worker for offshore engineers. WhatsApp in. ERPNext out. Nothing in between." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  GLOBAL FX LAYER                                              ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<div class="grain"></div>
+<div class="vignette"></div>
+
+<!-- top nav -->
+<header class="nav">
+  <a href="#" class="brand" aria-label="IMPRESUB · DECK">
+    <img class="brand__logo"
+         src="https://www.impresub.com/wp-content/uploads/2021/07/logo.png"
+         alt="IMPRESUB"
+         loading="eager"
+         referrerpolicy="no-referrer" />
+    <div class="brand__divider" aria-hidden="true"></div>
+    <div class="brand__words">
+      <div class="brand__main">DECK</div>
+      <div class="brand__sub">AI CO-WORKER</div>
+    </div>
+  </a>
+
+  <!-- language + sound toggles -->
+  <div class="nav__toggles">
+    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">
+      <span class="lang-toggle__active" id="lang-active">EN</span>
+      <span class="lang-toggle__sep">·</span>
+      <span class="lang-toggle__alt" id="lang-alt">عربي</span>
+    </button>
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Toggle sound" title="Toggle sound">
+      <svg class="sound-toggle__on" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+      </svg>
+      <svg class="sound-toggle__off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+        <line x1="23" y1="9" x2="17" y2="15"/>
+        <line x1="17" y1="9" x2="23" y2="15"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="nav__links">
+    <a href="#story">Story</a>
+    <a href="#demo">Live Demo</a>
+    <a href="#cycle">Full Cycle</a>
+    <a href="#wow">Why It Works</a>
+    <a href="#close">Pilot</a>
+  </nav>
+  <a href="#demo" class="nav__cta">Try the demo →</a>
+</header>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT I — HERO                                                 ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="hero">
+  <div class="hero__sky"></div>
+  <div class="hero__sea"></div>
+  <div class="hero__sun"></div>
+  <div class="hero__vessel">
+    <svg viewBox="0 0 800 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,60 L40,55 L80,40 L120,30 L180,25 L240,22 L260,18 L280,22 L600,22 L640,30 L720,40 L760,50 L800,60 Z" fill="#0a1320" />
+      <rect x="220" y="10" width="14" height="14" fill="#0a1320" />
+      <rect x="320" y="6"  width="10" height="18" fill="#0a1320" />
+      <circle cx="240" cy="14" r="1.2" fill="#FF8A4C" />
+      <circle cx="420" cy="20" r="1.2" fill="#FFD27A" />
+      <circle cx="540" cy="20" r="1.2" fill="#FF8A4C" />
+    </svg>
+  </div>
+  <div class="hero__content">
+    <div class="hero__eyebrow">
+      <span class="dot"></span>
+      <span>SUBSEA INTELLIGENCE · OFFSHORE OPERATIONS · 2026</span>
+    </div>
+    <h1 class="hero__title">
+      <span class="line line--1">WHERE THE OCEAN ENDS,</span>
+      <span class="line line--2">THE REPORT BEGINS.</span>
+    </h1>
+    <p class="hero__sub">
+      A conversational AI co-worker for offshore engineers — built into the one app
+      they already trust. <em>WhatsApp in. ERPNext out. Nothing in between.</em>
+    </p>
+    <div class="hero__heritage">
+      Built for fifty years of offshore work. <em>Tuned for the next one.</em>
+    </div>
+    <div class="hero__ctas">
+      <a href="#demo" class="btn btn--primary">
+        <span>Open the demo</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#story" class="btn btn--ghost">Watch the 90-second story</a>
+    </div>
+    <div class="hero__credits">
+      <div><b>Designed for</b> harsh seas, gloved hands, weak signal.</div>
+      <div><b>Pilot-ready</b> for one vessel, 30 days, 10 engineers.</div>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <span>SCROLL</span>
+    <i></i>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT II — THE STORY (cinematic scrollytell)                   ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section id="story" class="story">
+  <div class="story__head">
+    <div class="kicker">THE FILM</div>
+    <h2>Ninety seconds. One man. One green tick.</h2>
+  </div>
+
+  <ol class="scenes">
+    <li class="scene" data-scene="1">
+      <div class="scene__num">SC&nbsp;01</div>
+      <div class="scene__time">0:00 — 0:08</div>
+      <h3>The edge of the world.</h3>
+      <p>Drone descends over a 90-meter DSV motionless on glass-flat sea. Last orange knife of sun. Wind. Hull groan. A single cello note rises from silence.</p>
+    </li>
+    <li class="scene" data-scene="2">
+      <div class="scene__num">SC&nbsp;02</div>
+      <div class="scene__time">0:08 — 0:18</div>
+      <h3>The hands.</h3>
+      <p>Macro close-up. Salt-cracked knuckles. A wedding ring dulled by seawater. Forty-two days at sea — and the paperwork is still waiting.</p>
+    </li>
+    <li class="scene" data-scene="3">
+      <div class="scene__num">SC&nbsp;03</div>
+      <div class="scene__time">0:18 — 0:30</div>
+      <h3>One word.</h3>
+      <p>He types <em>"Hi"</em>. The reply lands before his thumb leaves the screen — already knowing the project, the day, the rotation. The smallest smile.</p>
+    </li>
+    <li class="scene" data-scene="4">
+      <div class="scene__num">SC&nbsp;04</div>
+      <div class="scene__time">0:30 — 0:42</div>
+      <h3>The voice.</h3>
+      <p>He doesn't type. He speaks into the wind for fifteen seconds. As he speaks, the report writes itself — field by field, in the rhythm of the cello.</p>
+    </li>
+    <li class="scene" data-scene="5">
+      <div class="scene__num">SC&nbsp;05</div>
+      <div class="scene__time">0:42 — 0:58</div>
+      <h3>The invisible machine.</h3>
+      <p>Hard cut to Milan. A single dispatcher's screen. ERPNext populates itself. Project code, cost center, status — all green. No human touched it.</p>
+    </li>
+    <li class="scene" data-scene="6">
+      <div class="scene__num">SC&nbsp;06</div>
+      <div class="scene__time">0:58 — 1:30</div>
+      <h3>The quiet.</h3>
+      <p>He pockets the phone. Walks to the mess. For the first time today, the ocean is just the ocean again. <em>Reporting, without the report.</em></p>
+    </li>
+  </ol>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT III — INTERACTIVE LIVE DEMO                              ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section id="demo" class="demo">
+  <!-- exit button (visible only in fullscreen mode) -->
+  <button class="demo__exit" id="demo-exit" aria-label="Exit fullscreen" type="button">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="6" y1="6" x2="18" y2="18"/>
+      <line x1="18" y1="6" x2="6" y2="18"/>
+    </svg>
+    <span>Exit</span>
+  </button>
+
+  <div class="demo__head">
+    <div class="kicker">LIVE PROTOTYPE</div>
+    <h2>Try it. Use one thumb.</h2>
+    <p class="demo__tag">A real conversation with DECK. Watch ERPNext fill itself on the right — exactly as it would in the Milan operations room, in real time.</p>
+  </div>
+
+  <div class="demo__stage">
+
+    <!-- ╔═══ CINEMATIC THEATER — LEFT SIDE ════════════════════╗ -->
+    <div class="theater" id="theater">
+
+      <!-- atmosphere layers, back-to-front -->
+      <div class="atm atm--sky"></div>
+      <div class="atm atm--sun"></div>
+      <div class="atm atm--haze"></div>
+      <div class="atm atm--stars"></div>
+      <div class="atm atm--sea"></div>
+
+      <!-- drifting clouds -->
+      <div class="atm atm--clouds" aria-hidden="true">
+        <svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMid slice">
+          <g class="cloud cloud--1" fill="#FFFFFF" opacity="0.9">
+            <ellipse cx="120" cy="60" rx="48" ry="14"/>
+            <ellipse cx="100" cy="52" rx="28" ry="14"/>
+            <ellipse cx="145" cy="50" rx="24" ry="12"/>
+          </g>
+          <g class="cloud cloud--2" fill="#FFFFFF" opacity="0.85">
+            <ellipse cx="500" cy="40" rx="60" ry="12"/>
+            <ellipse cx="475" cy="32" rx="22" ry="11"/>
+            <ellipse cx="525" cy="32" rx="26" ry="12"/>
+          </g>
+          <g class="cloud cloud--3" fill="#FFFFFF" opacity="0.75">
+            <ellipse cx="700" cy="80" rx="40" ry="10"/>
+            <ellipse cx="685" cy="74" rx="20" ry="10"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- ╭───────────────────────────────────────────────╮
+            DISNEY-STYLE VESSEL + CHARACTER
+            single SVG so they bob together on the waves
+           ╰───────────────────────────────────────────────╯ -->
+      <div class="atm atm--ship" id="ship">
+        <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <defs>
+            <linearGradient id="hullShine" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#FFFFFF"/>
+              <stop offset="100%" stop-color="#E5E9EE"/>
+            </linearGradient>
+            <linearGradient id="orangeShine" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#FF8A4C"/>
+              <stop offset="100%" stop-color="#E8502D"/>
+            </linearGradient>
+          </defs>
+
+          <!-- ─── DRILLSHIP — oil & gas exploration vessel ─── -->
+          <g class="ship__body">
+            <!-- BOW WAKE foam (white spray below the front of the hull) -->
+            <g class="bow-wake">
+              <ellipse cx="120" cy="555" rx="70" ry="10" fill="#FFFFFF" opacity="0.7">
+                <animate attributeName="rx" values="60;78;60" dur="3.2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".5;.85;.5" dur="3.2s" repeatCount="indefinite"/>
+              </ellipse>
+              <ellipse cx="100" cy="558" rx="40" ry="6" fill="#FFFFFF" opacity="0.6">
+                <animate attributeName="cx" values="90;110;90" dur="3.2s" repeatCount="indefinite"/>
+              </ellipse>
+              <!-- stern wake -->
+              <ellipse cx="690" cy="555" rx="55" ry="8" fill="#FFFFFF" opacity="0.6">
+                <animate attributeName="rx" values="48;65;48" dur="3.5s" repeatCount="indefinite"/>
+              </ellipse>
+            </g>
+            <!-- HULL -->
+            <path d="M40,445 Q70,530 200,545 L600,545 Q730,530 760,445 L700,425 L100,425 Z"
+                  fill="url(#hullShine)" stroke="#0A1A2E" stroke-width="2.5"/>
+            <path d="M100,445 L700,445" stroke="#E8502D" stroke-width="7" stroke-linecap="round"/>
+            <!-- vessel name plate -->
+            <rect x="295" y="500" width="210" height="16" rx="2" fill="#0A1A2E"/>
+            <text x="400" y="512" font-family="Space Grotesk, sans-serif" font-weight="800"
+                  font-size="11" letter-spacing="2" fill="#E8502D" text-anchor="middle">DSV SATURN · BLOCK 9</text>
+            <!-- portholes -->
+            <g stroke="#0A1A2E" stroke-width="1.5">
+              <circle cx="155" cy="478" r="6" fill="#FFD27A"/>
+              <circle cx="190" cy="478" r="6" fill="#FFD27A"/>
+              <circle cx="225" cy="478" r="6" fill="#FFD27A"/>
+              <circle cx="595" cy="478" r="6" fill="#FFD27A"/>
+              <circle cx="630" cy="478" r="6" fill="#FFD27A"/>
+              <circle cx="665" cy="478" r="6" fill="#FFD27A"/>
+            </g>
+
+            <!-- MAIN DECK -->
+            <rect x="100" y="395" width="600" height="30" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+            <g stroke="#0A1A2E" stroke-width="1" opacity="0.45">
+              <line x1="180" y1="395" x2="180" y2="425"/>
+              <line x1="260" y1="395" x2="260" y2="425"/>
+              <line x1="500" y1="395" x2="500" y2="425"/>
+              <line x1="580" y1="395" x2="580" y2="425"/>
+            </g>
+            <!-- moonpool indicator (drilling hole in deck) -->
+            <ellipse cx="380" cy="405" rx="32" ry="5" fill="#0A1A2E"/>
+            <ellipse cx="380" cy="404" rx="28" ry="3" fill="#1B4A6E"/>
+
+            <!-- HELIDECK on the bow (left, raised on supports) -->
+            <g class="helideck">
+              <line x1="120" y1="395" x2="120" y2="345" stroke="#0A1A2E" stroke-width="3"/>
+              <line x1="225" y1="395" x2="225" y2="345" stroke="#0A1A2E" stroke-width="3"/>
+              <line x1="170" y1="395" x2="170" y2="345" stroke="#0A1A2E" stroke-width="2" opacity="0.7"/>
+              <ellipse cx="172" cy="345" rx="80" ry="14" fill="#0A1A2E"/>
+              <ellipse cx="172" cy="342" rx="76" ry="11" fill="#3A4A5C" stroke="#FAFAFA" stroke-width="1.5"/>
+              <text x="172" y="350" font-family="Space Grotesk, sans-serif" font-weight="900"
+                    font-size="20" fill="#FFD27A" text-anchor="middle">H</text>
+              <!-- safety lights on perimeter -->
+              <circle cx="100" cy="343" r="1.6" fill="#FFD27A"/>
+              <circle cx="244" cy="343" r="1.6" fill="#FFD27A"/>
+            </g>
+
+            <!-- DRILLING DERRICK (the hero of the vessel) -->
+            <g class="derrick">
+              <!-- four corner legs -->
+              <line x1="335" y1="395" x2="358" y2="120" stroke="#E8502D" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="425" y1="395" x2="402" y2="120" stroke="#E8502D" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="345" y1="395" x2="364" y2="120" stroke="#C94A1E" stroke-width="2.5" opacity="0.6"/>
+              <line x1="415" y1="395" x2="396" y2="120" stroke="#C94A1E" stroke-width="2.5" opacity="0.6"/>
+              <!-- horizontal cross beams -->
+              <g stroke="#E8502D" stroke-width="2">
+                <line x1="338" y1="345" x2="422" y2="345"/>
+                <line x1="342" y1="295" x2="418" y2="295"/>
+                <line x1="346" y1="245" x2="414" y2="245"/>
+                <line x1="350" y1="195" x2="410" y2="195"/>
+                <line x1="354" y1="145" x2="406" y2="145"/>
+              </g>
+              <!-- diagonal cross-bracing X patterns (the lattice look) -->
+              <g stroke="#0A1A2E" stroke-width="1.4" opacity="0.85">
+                <line x1="335" y1="395" x2="422" y2="345"/>
+                <line x1="425" y1="395" x2="338" y2="345"/>
+                <line x1="338" y1="345" x2="418" y2="295"/>
+                <line x1="422" y1="345" x2="342" y2="295"/>
+                <line x1="342" y1="295" x2="414" y2="245"/>
+                <line x1="418" y1="295" x2="346" y2="245"/>
+                <line x1="346" y1="245" x2="410" y2="195"/>
+                <line x1="414" y1="245" x2="350" y2="195"/>
+                <line x1="350" y1="195" x2="406" y2="145"/>
+                <line x1="410" y1="195" x2="354" y2="145"/>
+              </g>
+              <!-- crown block at top -->
+              <rect x="350" y="105" width="60" height="18" rx="2"
+                    fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="380" y1="105" x2="380" y2="78" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="380" cy="76" r="3.5" fill="#E8502D">
+                <animate attributeName="opacity" values="1;.15;1" dur="1.4s" repeatCount="indefinite"/>
+              </circle>
+              <!-- traveling block + drill string -->
+              <line x1="380" y1="123" x2="380" y2="320" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="370" y="320" width="20" height="22" rx="2" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- drill bit indicator going down -->
+              <line x1="380" y1="342" x2="380" y2="395" stroke="#0A1A2E" stroke-width="3"/>
+              <!-- IMPRESUB vertical text on derrick -->
+              <text x="380" y="220" font-family="Space Grotesk, sans-serif" font-weight="800"
+                    font-size="11" letter-spacing="3" fill="#FFFFFF" text-anchor="middle"
+                    transform="rotate(-90 380 220)">IMPRESUB</text>
+              <!-- WORK LIGHTS on derrick (warm yellow, pulsing) -->
+              <g class="derrick-lights">
+                <circle cx="338" cy="345" r="2.5" fill="#FFD27A"><animate attributeName="opacity" values="1;.4;1" dur="2s" repeatCount="indefinite"/></circle>
+                <circle cx="422" cy="345" r="2.5" fill="#FFD27A"><animate attributeName="opacity" values=".4;1;.4" dur="2s" repeatCount="indefinite"/></circle>
+                <circle cx="346" cy="245" r="2.5" fill="#FFD27A"><animate attributeName="opacity" values="1;.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+                <circle cx="414" cy="245" r="2.5" fill="#FFD27A"><animate attributeName="opacity" values=".4;1;.4" dur="2.4s" repeatCount="indefinite"/></circle>
+                <circle cx="354" cy="145" r="2.5" fill="#FFD27A"><animate attributeName="opacity" values="1;.4;1" dur="1.8s" repeatCount="indefinite"/></circle>
+                <circle cx="406" cy="145" r="2.5" fill="#FFD27A"><animate attributeName="opacity" values=".4;1;.4" dur="1.8s" repeatCount="indefinite"/></circle>
+              </g>
+              <!-- ambient glow around derrick from work lights -->
+              <ellipse cx="380" cy="280" rx="100" ry="180" fill="#FFD27A" opacity="0.05"/>
+            </g>
+
+            <!-- LIVING QUARTERS / SUPERSTRUCTURE (stern) -->
+            <g class="quarters">
+              <rect x="490" y="290" width="180" height="105" rx="6" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- 3 rows of cabin windows -->
+              <g stroke="#0A1A2E" stroke-width="1">
+                <rect x="500" y="300" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="525" y="300" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="550" y="300" width="20" height="13" fill="#FFD27A" opacity="0.9"/>
+                <rect x="575" y="300" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="600" y="300" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="625" y="300" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="500" y="320" width="20" height="13" fill="#FFD27A" opacity="0.9"/>
+                <rect x="525" y="320" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="550" y="320" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="575" y="320" width="20" height="13" fill="#FFD27A" opacity="0.9"/>
+                <rect x="600" y="320" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="625" y="320" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="500" y="340" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="525" y="340" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="550" y="340" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="575" y="340" width="20" height="13" fill="#7DD3FC"/>
+                <rect x="600" y="340" width="20" height="13" fill="#FFD27A" opacity="0.9"/>
+                <rect x="625" y="340" width="20" height="13" fill="#7DD3FC"/>
+              </g>
+              <!-- door -->
+              <rect x="500" y="365" width="22" height="30" rx="2" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1"/>
+              <circle cx="517" cy="380" r="1.5" fill="#FFD27A"/>
+              <!-- bridge -->
+              <rect x="525" y="225" width="120" height="65" rx="6" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="535" y="240" width="20" height="20" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1"/>
+              <rect x="558" y="240" width="20" height="20" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1"/>
+              <rect x="581" y="240" width="20" height="20" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1"/>
+              <rect x="604" y="240" width="20" height="20" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1"/>
+              <rect x="627" y="240" width="20" height="20" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1"/>
+              <!-- IMPRESUB on bridge facade -->
+              <text x="585" y="280" font-family="Space Grotesk, sans-serif" font-weight="800"
+                    font-size="11" letter-spacing="3" fill="#0A1A2E" text-anchor="middle">IMPRESUB</text>
+              <!-- bridge accent stripe -->
+              <rect x="535" y="266" width="100" height="2" fill="#E8502D"/>
+              <!-- communication mast + radar dish -->
+              <line x1="585" y1="225" x2="585" y2="170" stroke="#0A1A2E" stroke-width="2.5"/>
+              <line x1="578" y1="190" x2="592" y2="190" stroke="#0A1A2E" stroke-width="1.5"/>
+              <line x1="582" y1="180" x2="588" y2="180" stroke="#0A1A2E" stroke-width="1.5"/>
+              <ellipse cx="585" cy="170" rx="10" ry="3" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1">
+                <animateTransform attributeName="transform" type="rotate"
+                                  from="0 585 170" to="360 585 170" dur="6s" repeatCount="indefinite"/>
+              </ellipse>
+              <!-- IMPRESUB flag -->
+              <rect x="586" y="180" width="2" height="35" fill="#0A1A2E"/>
+              <path d="M588,180 L618,185 L615,193 L588,193 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1"/>
+            </g>
+
+            <!-- FUNNEL between derrick and quarters -->
+            <rect x="450" y="265" width="22" height="40" rx="3" fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <ellipse cx="461" cy="265" rx="11" ry="3.5" fill="#0A1A2E"/>
+            <circle class="smoke smoke--1" cx="461" cy="245" r="8" fill="#FFFFFF" opacity="0"/>
+            <circle class="smoke smoke--2" cx="466" cy="225" r="10" fill="#FFFFFF" opacity="0"/>
+            <circle class="smoke smoke--3" cx="458" cy="205" r="12" fill="#FFFFFF" opacity="0"/>
+
+            <!-- KNUCKLE-BOOM CRANE (right of derrick) -->
+            <rect x="476" y="320" width="6" height="75" fill="#0A1A2E"/>
+            <line x1="479" y1="320" x2="540" y2="280" stroke="url(#orangeShine)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="540" y1="280" x2="510" y2="305" stroke="url(#orangeShine)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="510" y1="305" x2="510" y2="345" stroke="#0A1A2E" stroke-width="1" stroke-dasharray="3 2"/>
+            <rect x="503" y="345" width="14" height="10" rx="1.5" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1"/>
+
+            <!-- Foredeck railing where main char stands -->
+            <line x1="245" y1="395" x2="320" y2="395" stroke="#0A1A2E" stroke-width="1.5"/>
+            <line x1="245" y1="375" x2="320" y2="375" stroke="#0A1A2E" stroke-width="1"/>
+            <line x1="260" y1="375" x2="260" y2="395" stroke="#0A1A2E" stroke-width="1"/>
+            <line x1="290" y1="375" x2="290" y2="395" stroke="#0A1A2E" stroke-width="1"/>
+          </g>
+
+          <!-- ─── ADDITIONAL CREW (background characters) ─── -->
+          <!-- Crew #2 — yellow hat, near the helideck -->
+          <g class="crew crew--2" transform="translate(200 395) scale(0.32)">
+            <ellipse cx="-7" cy="0" rx="9" ry="3.5" fill="#0A0A0A"/>
+            <ellipse cx="7" cy="0" rx="9" ry="3.5" fill="#0A0A0A"/>
+            <rect x="-12" y="-50" width="12" height="50" rx="3" fill="#1A2B47"/>
+            <rect x="0"   y="-50" width="12" height="50" rx="3" fill="#1A2B47"/>
+            <path d="M-22,-130 Q-22,-135 -18,-135 L18,-135 Q22,-135 22,-130 L25,-50 L-25,-50 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <path d="M-23,-95 L23,-95" stroke="#F4F4F2" stroke-width="3.5"/>
+            <!-- arm waving up -->
+            <path d="M22,-128 Q40,-140 38,-160 L30,-165 L22,-148 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <circle cx="33" cy="-162" r="5" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1"/>
+            <!-- left arm down -->
+            <path d="M-22,-128 Q-32,-122 -32,-95 L-26,-72 L-18,-74 L-18,-105 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- head -->
+            <circle cx="0" cy="-158" r="20" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+            <circle cx="-6" cy="-160" r="2" fill="#0A1A2E"/>
+            <circle cx="6" cy="-160" r="2" fill="#0A1A2E"/>
+            <path d="M-5,-148 Q0,-144 5,-148" stroke="#0A1A2E" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+            <!-- yellow hard hat -->
+            <path d="M-22,-176 Q0,-204 22,-176 L24,-170 L-24,-170 Z" fill="#FFD600" stroke="#0A1A2E" stroke-width="2"/>
+            <rect x="-24" y="-173" width="48" height="5" fill="#0A1A2E"/>
+          </g>
+
+          <!-- Crew #3 — white hat, near aft on the catwalk -->
+          <g class="crew crew--3" transform="translate(640 395) scale(0.28)">
+            <ellipse cx="-7" cy="0" rx="9" ry="3.5" fill="#0A0A0A"/>
+            <ellipse cx="7" cy="0" rx="9" ry="3.5" fill="#0A0A0A"/>
+            <rect x="-12" y="-50" width="12" height="50" rx="3" fill="#1A2B47"/>
+            <rect x="0"   y="-50" width="12" height="50" rx="3" fill="#1A2B47"/>
+            <path d="M-22,-130 Q-22,-135 -18,-135 L18,-135 Q22,-135 22,-130 L25,-50 L-25,-50 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <path d="M-23,-95 L23,-95" stroke="#F4F4F2" stroke-width="3.5"/>
+            <path d="M-22,-128 Q-32,-122 -32,-95 L-26,-72 L-18,-74 L-18,-105 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <path d="M22,-128 Q32,-122 32,-95 L26,-72 L18,-74 L18,-105 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <circle cx="0" cy="-158" r="20" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+            <circle cx="-6" cy="-160" r="2" fill="#0A1A2E"/>
+            <circle cx="6" cy="-160" r="2" fill="#0A1A2E"/>
+            <path d="M-5,-148 Q0,-145 5,-148" stroke="#0A1A2E" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+            <!-- white hard hat -->
+            <path d="M-22,-176 Q0,-204 22,-176 L24,-170 L-24,-170 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+            <rect x="-24" y="-173" width="48" height="5" fill="#E8502D"/>
+          </g>
+
+          <!-- ─── CHARACTER ON DECK ─── -->
+          <g class="char" transform="translate(415 395) scale(0.55)">
+            <!-- legs (work pants) -->
+            <rect x="-13" y="-50" width="13" height="50" rx="3" fill="#1A2B47"/>
+            <rect x="0"   y="-50" width="13" height="50" rx="3" fill="#1A2B47"/>
+            <!-- boots -->
+            <ellipse cx="-7" cy="0" rx="11" ry="4" fill="#0A0A0A"/>
+            <ellipse cx="7"  cy="0" rx="11" ry="4" fill="#0A0A0A"/>
+
+            <!-- torso (orange coverall) -->
+            <path d="M-26,-130 Q-26,-135 -22,-135 L22,-135 Q26,-135 26,-130 L29,-50 L-29,-50 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- reflective bands -->
+            <path d="M-28,-95 L28,-95" stroke="#F4F4F2" stroke-width="4"/>
+            <path d="M-29,-72 L29,-72" stroke="#F4F4F2" stroke-width="4"/>
+            <!-- chest IMPRESUB tag -->
+            <rect x="-12" y="-122" width="24" height="9" rx="1.5" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="0.8"/>
+
+            <!-- POSE — IDLE (both arms down, phone in pocket) -->
+            <g class="pose pose--idle">
+              <path d="M-26,-128 Q-38,-122 -38,-95 L-32,-72 L-22,-74 L-22,-105 Z"
+                    fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M26,-128 Q38,-122 38,-95 L32,-72 L22,-74 L22,-105 Z"
+                    fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="-34" cy="-72" r="6" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1"/>
+              <circle cx="34"  cy="-72" r="6" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1"/>
+              <!-- phone outline in pocket -->
+              <rect x="20" y="-92" width="10" height="14" rx="1.5" fill="#0A0A0A" opacity="0.35"/>
+            </g>
+
+            <!-- POSE — PHONE (right arm raised, holding phone) -->
+            <g class="pose pose--phone">
+              <!-- left arm down -->
+              <path d="M-26,-128 Q-38,-122 -38,-95 L-32,-72 L-22,-74 L-22,-105 Z"
+                    fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="-34" cy="-72" r="6" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1"/>
+              <!-- right arm raised, bending up to face -->
+              <path d="M26,-128 Q44,-126 52,-110 L58,-90 L48,-78 L38,-92 L24,-108 Z"
+                    fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M52,-110 Q60,-100 56,-78 L48,-58 L36,-62 L42,-82 L46,-100 Z"
+                    fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- hand -->
+              <circle cx="44" cy="-58" r="7" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.2"/>
+              <!-- phone (held facing him) -->
+              <rect x="36" y="-78" width="16" height="24" rx="2.5" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="1"/>
+              <rect x="38" y="-76" width="12" height="18" rx="1" fill="#7DD3FC">
+                <animate attributeName="fill" values="#7DD3FC;#A8E1FF;#7DD3FC" dur="1.8s" repeatCount="indefinite"/>
+              </rect>
+              <!-- glow from screen onto face -->
+              <ellipse cx="20" cy="-130" rx="32" ry="14" fill="#7DD3FC" opacity="0.18"/>
+            </g>
+
+            <!-- HEAD (Pixar-tweaked: larger, more expressive) -->
+            <!-- neck -->
+            <rect x="-7" y="-145" width="14" height="13" fill="#E5B47A"/>
+            <line x1="-7" y1="-138" x2="7" y2="-138" stroke="#0A1A2E" stroke-width="0.8" opacity="0.4"/>
+            <!-- face shape (slightly wider chin for friendliness) -->
+            <path d="M-25,-176 Q-26,-148 -18,-138 Q0,-130 18,-138 Q26,-148 25,-176 Z"
+                  fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+            <!-- ear-cup hint (industrial, suggests safety) -->
+            <ellipse cx="-26" cy="-168" rx="5" ry="9" fill="#1A2B47" stroke="#0A1A2E" stroke-width="1"/>
+            <ellipse cx="26"  cy="-168" rx="5" ry="9" fill="#1A2B47" stroke="#0A1A2E" stroke-width="1"/>
+            <!-- cheek tone (warm) -->
+            <ellipse cx="-13" cy="-156" rx="6" ry="3" fill="#E8502D" opacity="0.18"/>
+            <ellipse cx="13"  cy="-156" rx="6" ry="3" fill="#E8502D" opacity="0.18"/>
+            <!-- eyes (BIG Pixar-style, looking down at phone) -->
+            <ellipse cx="-9" cy="-170" rx="3.4" ry="3.8" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="1"/>
+            <ellipse cx="9"  cy="-170" rx="3.4" ry="3.8" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="1"/>
+            <!-- iris (tilted slightly down toward phone) -->
+            <ellipse cx="-9" cy="-168.5" rx="2.2" ry="2.6" fill="#1A4D6E"/>
+            <ellipse cx="9"  cy="-168.5" rx="2.2" ry="2.6" fill="#1A4D6E"/>
+            <!-- pupils -->
+            <circle cx="-9" cy="-167.5" r="1" fill="#0A1A2E"/>
+            <circle cx="9"  cy="-167.5" r="1" fill="#0A1A2E"/>
+            <!-- catch-light (specular highlight) -->
+            <circle cx="-7.8" cy="-170" r="0.7" fill="#FFFFFF"/>
+            <circle cx="10.2" cy="-170" r="0.7" fill="#FFFFFF"/>
+            <!-- thick expressive eyebrows -->
+            <path d="M-15,-180 Q-9,-183 -3,-181" stroke="#3A2A1A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M3,-181 Q9,-183 15,-180" stroke="#3A2A1A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <!-- nose (more 3D suggestion) -->
+            <path d="M-1,-166 Q-3,-160 -2,-156 L2,-156 Q3,-160 1,-166 Z"
+                  fill="#E5B47A" stroke="#0A1A2E" stroke-width="0.6" opacity="0.7"/>
+            <!-- mouth (warm smile, tired-but-content) -->
+            <path d="M-7,-152 Q-3,-148 0,-149 Q3,-148 7,-152" stroke="#0A1A2E"
+                  stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <!-- lower lip warmth -->
+            <path d="M-5,-149 Q0,-147 5,-149" stroke="#C94A1E"
+                  stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+            <!-- stubble/beard (visible 5 o'clock shadow) -->
+            <ellipse cx="0" cy="-148" rx="16" ry="8" fill="#3A2A1A" opacity="0.16"/>
+            <ellipse cx="-12" cy="-150" rx="3" ry="2.5" fill="#3A2A1A" opacity="0.14"/>
+            <ellipse cx="12"  cy="-150" rx="3" ry="2.5" fill="#3A2A1A" opacity="0.14"/>
+
+            <!-- HARD HAT (orange + IMPRESUB band) -->
+            <path d="M-24,-188 Q0,-218 24,-188 L26,-180 L-26,-180 Z"
+                  fill="url(#orangeShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <rect x="-26" y="-184" width="52" height="6" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1"/>
+            <!-- hat highlight -->
+            <path d="M-15,-205 Q-5,-215 5,-210" stroke="#FFFFFF" stroke-width="2.2"
+                  fill="none" stroke-linecap="round" opacity="0.6"/>
+            <!-- IMPRESUB-style chevron on hat -->
+            <path d="M-6,-181 L0,-184 L6,-181" stroke="#E8502D" stroke-width="1.5" fill="none"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- HELICOPTER — flies across the sky, approaches the helideck -->
+      <div class="atm atm--heli" aria-hidden="true">
+        <svg viewBox="0 0 220 110" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="heliBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#FAFAFA"/>
+              <stop offset="55%" stop-color="#FFFFFF"/>
+              <stop offset="100%" stop-color="#D4D8DC"/>
+            </linearGradient>
+          </defs>
+          <!-- main rotor (motion-blur ellipse) -->
+          <ellipse cx="80" cy="20" rx="78" ry="2" fill="#0A1A2E" opacity="0.65">
+            <animate attributeName="rx" values="78;14;78" dur="0.18s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="0.18s" repeatCount="indefinite"/>
+          </ellipse>
+          <line x1="80" y1="20" x2="80" y2="35" stroke="#0A1A2E" stroke-width="2.5"/>
+          <circle cx="80" cy="20" r="3" fill="#0A1A2E"/>
+
+          <!-- BODY -->
+          <ellipse cx="80" cy="55" rx="42" ry="18" fill="url(#heliBody)" stroke="#0A1A2E" stroke-width="2"/>
+          <!-- orange IMPRESUB stripe -->
+          <path d="M40,58 Q80,68 120,58 L120,64 Q80,74 40,64 Z" fill="#E8502D"/>
+          <!-- nose / cockpit window -->
+          <path d="M52,46 Q44,55 50,64 L78,62 L78,46 Z" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1.5"/>
+          <!-- side door window -->
+          <rect x="82" y="47" width="14" height="12" rx="2" fill="#7DD3FC" stroke="#0A1A2E" stroke-width="1.2"/>
+          <!-- IMPRESUB tag on side -->
+          <text x="102" y="56" font-family="Space Grotesk, sans-serif" font-weight="800"
+                font-size="6" letter-spacing="1" fill="#0A1A2E">IMPRESUB</text>
+
+          <!-- TAIL boom -->
+          <path d="M120,52 L195,46 L200,52 L195,58 L120,58 Z"
+                fill="url(#heliBody)" stroke="#0A1A2E" stroke-width="2"/>
+          <!-- tail fin -->
+          <path d="M188,46 L210,30 L210,42 L195,46 Z"
+                fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+          <!-- tail rotor -->
+          <line x1="200" y1="30" x2="200" y2="58" stroke="#0A1A2E" stroke-width="1.5"/>
+          <ellipse cx="200" cy="44" rx="2" ry="14" fill="#0A1A2E" opacity="0.5">
+            <animate attributeName="rx" values="2;10;2" dur="0.16s" repeatCount="indefinite"/>
+          </ellipse>
+
+          <!-- skids -->
+          <line x1="55" y1="86" x2="105" y2="86" stroke="#0A1A2E" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="55" y1="86" x2="58" y2="76" stroke="#0A1A2E" stroke-width="2"/>
+          <line x1="105" y1="86" x2="102" y2="76" stroke="#0A1A2E" stroke-width="2"/>
+          <line x1="68" y1="76" x2="68" y2="73" stroke="#0A1A2E" stroke-width="1.5"/>
+          <line x1="92" y1="76" x2="92" y2="73" stroke="#0A1A2E" stroke-width="1.5"/>
+
+          <!-- nav lights -->
+          <circle cx="40" cy="55" r="2" fill="#E8502D">
+            <animate attributeName="opacity" values="1;.2;1" dur="0.8s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="120" cy="55" r="2" fill="#FFD600">
+            <animate attributeName="opacity" values=".2;1;.2" dur="0.8s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+
+      <!-- birds drifting (atmospheric detail) -->
+      <div class="atm atm--birds" aria-hidden="true">
+        <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+          <g class="bird bird--1" stroke="#0A1A2E" stroke-width="1.5" fill="none" stroke-linecap="round">
+            <path d="M0,40 Q5,33 10,40 Q15,33 20,40"/>
+          </g>
+          <g class="bird bird--2" stroke="#0A1A2E" stroke-width="1.5" fill="none" stroke-linecap="round">
+            <path d="M0,60 Q5,53 10,60 Q15,53 20,60"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- animated waves layer (foreground) -->
+      <div class="atm atm--waves" aria-hidden="true">
+        <svg viewBox="0 0 1600 200" preserveAspectRatio="none">
+          <path class="wave wave--back"  d="M0,80 Q200,40 400,80 T800,80 T1200,80 T1600,80 V200 H0 Z" fill="#1B4A6E" opacity="0.9"/>
+          <path class="wave wave--mid"   d="M0,110 Q200,80 400,110 T800,110 T1200,110 T1600,110 V200 H0 Z" fill="#0E3A5C"/>
+          <path class="wave wave--front" d="M0,140 Q200,110 400,140 T800,140 T1200,140 T1600,140 V200 H0 Z" fill="#082640"/>
+        </svg>
+      </div>
+
+      <!-- ╔══════════════════════════════════════════════════════════════╗
+           ║   ADDITIONAL SCENE OVERLAYS — for the full-cycle film       ║
+           ║   Hidden by default, activated by JS during playCinematic   ║
+           ╚══════════════════════════════════════════════════════════════╝ -->
+
+      <!-- ─── OVERLAY 1: CAIRO OFFICE — MAGED + EMAIL ──────── -->
+      <div class="ov ov--cairo" id="ov-cairo" aria-hidden="true">
+        <div class="ov__bg ov__bg--cairo">
+          <div class="ov-cairo__sun"></div>
+          <!-- big window with sea continuity -->
+          <svg class="ov-cairo__window" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="ovWinSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#88C9E8"/>
+                <stop offset="50%" stop-color="#FFD9B0"/>
+                <stop offset="100%" stop-color="#FFB082"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#ovWinSky)"/>
+            <circle cx="430" cy="120" r="50" fill="#FFE6B3" opacity="0.9"/>
+            <rect x="0" y="220" width="600" height="180" fill="#1B4A6E"/>
+            <line x1="0" y1="220" x2="600" y2="220" stroke="#FFD27A" stroke-width="2" opacity="0.7"/>
+            <!-- Marco's vessel on the horizon -->
+            <g opacity="0.8">
+              <path d="M220,217 L235,212 L355,212 L370,217 L365,225 L225,225 Z" fill="#0A1A2E"/>
+              <line x1="287" y1="212" x2="295" y2="190" stroke="#E8502D" stroke-width="2.5"/>
+              <line x1="270" y1="212" x2="295" y2="190" stroke="#E8502D" stroke-width="2"/>
+              <line x1="320" y1="212" x2="295" y2="190" stroke="#E8502D" stroke-width="2"/>
+              <circle cx="295" cy="190" r="2" fill="#FFD27A">
+                <animate attributeName="opacity" values="1;.3;1" dur="1.5s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+          <div class="ov-cairo__win-frame"></div>
+          <!-- certificate on wall -->
+          <div class="ov-cairo__cert">
+            <div class="cert__line"></div>
+            <div class="cert__line cert__line--short"></div>
+            <div class="cert__seal">◆ ISO 9001</div>
+          </div>
+          <!-- IMPRESUB plaque -->
+          <div class="ov-cairo__plaque">IMPRESUB · CAIRO HQ</div>
+
+          <!-- desk + Maged scene SVG -->
+          <svg class="ov-cairo__main" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMax meet">
+            <defs>
+              <linearGradient id="ovSuit" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#1F3148"/>
+                <stop offset="100%" stop-color="#0E1E2E"/>
+              </linearGradient>
+              <linearGradient id="ovDesk" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#5D3A24"/>
+                <stop offset="100%" stop-color="#3A2316"/>
+              </linearGradient>
+            </defs>
+            <!-- desk -->
+            <path d="M40,560 L960,560 L940,640 L60,640 Z" fill="url(#ovDesk)" stroke="#0A1A2E" stroke-width="2.5"/>
+            <rect x="40" y="554" width="920" height="10" fill="#7A4E32" stroke="#0A1A2E" stroke-width="1.5"/>
+            <line x1="50" y1="560" x2="950" y2="560" stroke="#A06D4A" stroke-width="1.5" opacity="0.7"/>
+
+            <!-- coffee mug -->
+            <g class="ov-coffee">
+              <ellipse cx="780" cy="555" rx="36" ry="7" fill="#0A1A2E" opacity="0.4"/>
+              <path d="M748,492 L748,545 Q748,562 780,562 Q812,562 812,545 L812,492 Z"
+                    fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2.5"/>
+              <path d="M812,508 Q830,508 830,520 Q830,532 812,532" stroke="#0A1A2E" stroke-width="2.5" fill="none"/>
+              <ellipse cx="780" cy="492" rx="32" ry="6" fill="#5D3A24" stroke="#0A1A2E" stroke-width="1.5"/>
+              <ellipse cx="780" cy="490" rx="28" ry="3.5" fill="#7A4E32"/>
+              <text x="780" y="528" font-family="Space Grotesk" font-weight="800" font-size="8" letter-spacing="2" fill="#E8502D" text-anchor="middle">IMPRESUB</text>
+              <g class="ov-steam" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6">
+                <path d="M772,485 Q768,470 776,455 Q784,440 776,425"/>
+                <path d="M788,485 Q792,470 784,455 Q776,440 788,425"/>
+              </g>
+            </g>
+
+            <!-- LAPTOP big and detailed (open, screen showing email) -->
+            <g class="ov-laptop">
+              <path d="M310,548 L660,548 L680,568 L290,568 Z" fill="#1F1F1F" stroke="#0A1A2E" stroke-width="2.5"/>
+              <path d="M340,548 L630,548 L630,360 L340,360 Z" fill="#1F1F1F" stroke="#0A1A2E" stroke-width="2.5"/>
+              <!-- screen -->
+              <rect x="350" y="370" width="270" height="170" fill="#F4F4F2"/>
+              <!-- email app header -->
+              <rect x="350" y="370" width="270" height="22" fill="#0A2540"/>
+              <text x="360" y="385" font-family="Space Grotesk" font-weight="700" font-size="9" letter-spacing="2" fill="#FFFFFF">📧 INBOX · 1 NEW</text>
+              <circle class="ov-email-dot" cx="610" cy="382" r="5" fill="#E8502D"/>
+              <text x="610" y="385" font-family="Space Grotesk" font-weight="900" font-size="7" fill="#FFFFFF" text-anchor="middle">!</text>
+              <!-- the new email row (highlighted) -->
+              <rect class="ov-email-row" x="350" y="395" width="270" height="48" fill="#FFE6B3"/>
+              <rect class="ov-email-row-bar" x="350" y="395" width="4" height="48" fill="#E8502D"/>
+              <text x="360" y="408" font-family="Space Grotesk" font-weight="700" font-size="9" fill="#0A2540">FROM: PETROJET · CONTRACTS DEPT.</text>
+              <text x="360" y="421" font-family="Space Grotesk" font-weight="600" font-size="8" fill="#0A2540">Subject: New Project — Underwater Survey · Block 9</text>
+              <text x="360" y="434" font-family="Space Grotesk" font-weight="400" font-size="7.5" fill="#3A4A5C">Scope of Work attached · Award pending review</text>
+              <text x="610" y="408" font-family="Space Grotesk" font-weight="700" font-size="7" fill="#3A4A5C" text-anchor="end">09:14</text>
+              <rect x="360" y="425" width="50" height="9" rx="2" fill="none" stroke="#3A4A5C" stroke-width="0.6"/>
+              <text x="385" y="432" font-family="Space Grotesk" font-size="6" fill="#3A4A5C" text-anchor="middle">📎 SoW.pdf</text>
+              <!-- other emails (faded) -->
+              <rect x="350" y="448" width="270" height="28" fill="#FAFAFA"/>
+              <text x="360" y="463" font-family="Space Grotesk" font-weight="600" font-size="7.5" fill="#7A8898">PETROBEL — Re: PRJ-2025-0992</text>
+              <rect x="350" y="478" width="270" height="28" fill="#FAFAFA"/>
+              <text x="360" y="493" font-family="Space Grotesk" font-weight="600" font-size="7.5" fill="#7A8898">BURULLUS — Q3 Schedule Update</text>
+              <rect x="350" y="508" width="270" height="28" fill="#FAFAFA"/>
+              <text x="360" y="523" font-family="Space Grotesk" font-weight="600" font-size="7.5" fill="#7A8898">EGAS — Pipeline Inspection RFQ</text>
+
+              <!-- Forward button glowing -->
+              <g class="ov-forward">
+                <circle cx="595" cy="510" r="14" fill="#E8502D">
+                  <animate attributeName="r" values="12;17;12" dur="1.4s" repeatCount="indefinite"/>
+                </circle>
+                <text x="595" y="516" font-family="Space Grotesk" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">↪</text>
+              </g>
+              <!-- glow border -->
+              <rect x="340" y="360" width="290" height="180" fill="none" stroke="#FFD27A" stroke-width="0.6" opacity="0.4">
+                <animate attributeName="opacity" values=".2;.7;.2" dur="2s" repeatCount="indefinite"/>
+              </rect>
+            </g>
+
+            <!-- MAGED THE CEO (sitting, larger this time) -->
+            <g class="ov-ceo" transform="translate(195 560)">
+              <!-- chair -->
+              <path d="M-75,-15 Q-82,-130 -55,-140 L-35,-140 L-35,-15 Z" fill="#1A2B47" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- torso (suit) -->
+              <path d="M-62,-15 Q-62,-115 -32,-125 L32,-125 Q62,-115 62,-15 Z"
+                    fill="url(#ovSuit)" stroke="#0A1A2E" stroke-width="2.5"/>
+              <!-- shirt collar -->
+              <path d="M-15,-125 L0,-95 L15,-125 L0,-118 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- tie -->
+              <path d="M-4,-114 L4,-114 L5,-95 L0,-87 L-5,-95 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1"/>
+              <path d="M-4,-87 L4,-87 L7,-30 L0,-22 L-7,-30 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1"/>
+              <!-- left arm resting on desk -->
+              <path d="M-62,-100 Q-72,-75 -70,-38 Q-67,-12 -45,-10 L-30,-15 L-30,-65 Q-37,-82 -50,-98 Z"
+                    fill="url(#ovSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <ellipse cx="-40" cy="-13" rx="11" ry="7" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- right arm raised, holding phone -->
+              <path d="M62,-100 Q75,-80 80,-58 L65,-38 L50,-62 L38,-88 Z"
+                    fill="url(#ovSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M65,-38 Q75,-18 62,8 L48,14 L36,-6 L50,-32 Z"
+                    fill="url(#ovSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="55" cy="12" r="11" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- PHONE in right hand -->
+              <rect x="40" y="-26" width="28" height="42" rx="4" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <rect x="42" y="-23" width="24" height="34" rx="2" fill="#0B141A"/>
+              <rect x="42" y="-23" width="24" height="6" fill="#1F2C34"/>
+              <circle cx="47" cy="-20" r="1.7" fill="#FF8A4C"/>
+              <text x="65" y="-19" font-family="Space Grotesk" font-weight="700" font-size="3" fill="#FFFFFF" text-anchor="end">DECK</text>
+              <rect x="44" y="-15" width="18" height="5" rx="1" fill="#1F2C34"/>
+              <rect x="46" y="-9" width="16" height="5" rx="1" fill="#005C4B"/>
+              <rect x="44" y="-3" width="14" height="5" rx="1" fill="#1F2C34"/>
+              <rect x="46" y="3" width="16" height="5" rx="1" fill="#005C4B"/>
+              <ellipse cx="55" cy="-5" rx="18" ry="8" fill="#7DD3FC" opacity="0.2"/>
+
+              <!-- HEAD -->
+              <rect x="-9" y="-138" width="18" height="16" fill="#E5B47A"/>
+              <path d="M-28,-180 Q-30,-148 -20,-138 Q0,-130 20,-138 Q30,-148 28,-180
+                       Q26,-200 0,-202 Q-26,-200 -28,-180 Z"
+                    fill="#FFCB8B" stroke="#0A1A2E" stroke-width="2"/>
+              <ellipse cx="-30" cy="-172" rx="4" ry="8" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.2"/>
+              <ellipse cx="30"  cy="-172" rx="4" ry="8" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.2"/>
+              <!-- hair -->
+              <path d="M-28,-190 Q0,-216 28,-190 L28,-184 Q0,-194 -28,-184 Z"
+                    fill="#3A4658" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-22,-196 Q-14,-201 -8,-196" stroke="#FAFAFA" stroke-width="1.4" fill="none" opacity="0.7"/>
+              <path d="M10,-196 Q18,-201 22,-196" stroke="#FAFAFA" stroke-width="1.4" fill="none" opacity="0.7"/>
+              <!-- eyebrows -->
+              <path d="M-17,-180 Q-11,-184 -5,-181" stroke="#3A2A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M5,-181 Q11,-184 17,-180" stroke="#3A2A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <!-- glasses -->
+              <circle cx="-11" cy="-172" r="7.5" fill="rgba(255,255,255,.15)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="11"  cy="-172" r="7.5" fill="rgba(255,255,255,.15)" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="-3.5" y1="-172" x2="3.5" y2="-172" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="-19" y1="-174" x2="-26" y2="-172" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="19"  y1="-174" x2="26"  y2="-172" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- eyes (looking at the phone, slightly down) -->
+              <circle cx="-11" cy="-170" r="2.2" fill="#1A4D6E"/>
+              <circle cx="11"  cy="-170" r="2.2" fill="#1A4D6E"/>
+              <circle cx="-10" cy="-170.5" r="0.7" fill="#FFFFFF"/>
+              <circle cx="12"  cy="-170.5" r="0.7" fill="#FFFFFF"/>
+              <!-- nose -->
+              <path d="M-2,-166 Q-3,-158 -1,-152 L1,-152 Q3,-158 2,-166 Z" fill="#E5B47A" opacity="0.7"/>
+              <!-- mouth (slight content smile) -->
+              <path d="M-8,-145 Q-3,-141 0,-141 Q3,-141 8,-145" stroke="#0A1A2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <ellipse cx="0" cy="-141" rx="16" ry="5" fill="#3A2A1A" opacity="0.1"/>
+              <!-- cheek warmth -->
+              <ellipse cx="-15" cy="-158" rx="6" ry="3" fill="#E8502D" opacity="0.18"/>
+              <ellipse cx="15"  cy="-158" rx="6" ry="3" fill="#E8502D" opacity="0.18"/>
+
+              <!-- Floating name tag -->
+              <g class="ov-ceo-tag">
+                <rect x="-65" y="-250" width="130" height="28" rx="4" fill="rgba(10,22,40,.85)" stroke="#E8502D" stroke-width="1.5"/>
+                <text x="0" y="-237" font-family="Space Grotesk" font-weight="800" font-size="11" letter-spacing="2.5" fill="#FFFFFF" text-anchor="middle">MAGED · CEO</text>
+                <text x="0" y="-226" font-family="Space Grotesk" font-weight="500" font-size="7" letter-spacing="2" fill="#FF8A4C" text-anchor="middle">IMPRESUB · CAIRO HQ</text>
+                <path d="M-6,-222 L0,-216 L6,-222 Z" fill="rgba(10,22,40,.85)"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ─── OVERLAY 2: PROCESSING (Tech → Cost → Quote → Award) ──────── -->
+      <div class="ov ov--process" id="ov-process" aria-hidden="true">
+        <div class="ov__bg ov__bg--process">
+          <div class="proc-flow">
+            <div class="proc-step proc-step--1">
+              <div class="proc-step__icon">📋</div>
+              <div class="proc-step__name">TECHNICAL REVIEW</div>
+              <div class="proc-step__sub">Eng. Karim · Resources tagged</div>
+              <div class="proc-step__check">✓</div>
+            </div>
+            <div class="proc-arrow"></div>
+            <div class="proc-step proc-step--2">
+              <div class="proc-step__icon">💰</div>
+              <div class="proc-step__name">COST SHEET</div>
+              <div class="proc-step__sub">Sara · $1.02M assembled</div>
+              <div class="proc-step__check">✓</div>
+            </div>
+            <div class="proc-arrow"></div>
+            <div class="proc-step proc-step--3">
+              <div class="proc-step__icon">📤</div>
+              <div class="proc-step__name">QUOTATION SENT</div>
+              <div class="proc-step__sub">$4.0M · PetroJet</div>
+              <div class="proc-step__check">✓</div>
+            </div>
+            <div class="proc-arrow"></div>
+            <div class="proc-step proc-step--4">
+              <div class="proc-step__icon">🏆</div>
+              <div class="proc-step__name">AWARDED</div>
+              <div class="proc-step__sub">PRJ-2026-0118 · live</div>
+              <div class="proc-step__check">✓</div>
+            </div>
+          </div>
+          <!-- big AWARDED stamp -->
+          <div class="proc-stamp">AWARDED</div>
+        </div>
+      </div>
+
+      <!-- ─── OVERLAY 3: MOBILIZATION (crew → vessel at port) ──────── -->
+      <div class="ov ov--mob" id="ov-mob" aria-hidden="true">
+        <div class="ov__bg ov__bg--mob">
+          <svg class="ov-mob__scene" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMax meet">
+            <defs>
+              <linearGradient id="mobSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#FFD9B0"/>
+                <stop offset="40%" stop-color="#FFB082"/>
+                <stop offset="100%" stop-color="#88C9E8"/>
+              </linearGradient>
+              <linearGradient id="mobWater" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#1B4A6E"/>
+                <stop offset="100%" stop-color="#082640"/>
+              </linearGradient>
+            </defs>
+            <!-- sky (morning) -->
+            <rect width="1200" height="380" fill="url(#mobSky)"/>
+            <circle cx="280" cy="160" r="55" fill="#FFE6B3" opacity="0.95"/>
+            <!-- sea -->
+            <rect x="0" y="380" width="1200" height="320" fill="url(#mobWater)"/>
+            <!-- horizon line -->
+            <line x1="0" y1="380" x2="1200" y2="380" stroke="#FFD27A" stroke-width="2" opacity="0.6"/>
+            <!-- gull birds -->
+            <path d="M180,140 Q186,134 192,140 Q198,134 204,140" stroke="#0A1A2E" stroke-width="2" fill="none"/>
+            <path d="M380,200 Q384,196 388,200 Q392,196 396,200" stroke="#0A1A2E" stroke-width="1.5" fill="none"/>
+
+            <!-- DOCK / PIER -->
+            <path d="M0,440 L900,440 L900,500 L0,500 Z" fill="#5D5552" stroke="#0A1A2E" stroke-width="2.5"/>
+            <line x1="0" y1="440" x2="900" y2="440" stroke="#3A3534" stroke-width="2"/>
+            <!-- bollards on the dock -->
+            <g fill="#0A1A2E">
+              <rect x="160" y="425" width="20" height="20" rx="3"/>
+              <rect x="380" y="425" width="20" height="20" rx="3"/>
+              <rect x="600" y="425" width="20" height="20" rx="3"/>
+              <rect x="820" y="425" width="20" height="20" rx="3"/>
+            </g>
+            <!-- mooring lines from bollards to vessel -->
+            <line x1="820" y1="430" x2="950" y2="380" stroke="#FAFAFA" stroke-width="2.5"/>
+            <line x1="600" y1="430" x2="940" y2="395" stroke="#FAFAFA" stroke-width="2.5" opacity="0.85"/>
+
+            <!-- PORT CRANE in the background -->
+            <g class="mob-crane">
+              <rect x="100" y="180" width="14" height="260" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="107" y1="190" x2="107" y2="440" stroke="#0A1A2E" stroke-width="1" stroke-dasharray="6 4" opacity="0.5"/>
+              <path d="M107,180 L320,150 L320,170 L107,200 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="280" y1="158" x2="280" y2="290" stroke="#0A1A2E" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <!-- container being lifted -->
+              <rect class="mob-container" x="252" y="290" width="56" height="48" rx="2" fill="#FF8A4C" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="252" y1="305" x2="308" y2="305" stroke="#0A1A2E" stroke-width="1" opacity="0.5"/>
+              <line x1="252" y1="320" x2="308" y2="320" stroke="#0A1A2E" stroke-width="1" opacity="0.5"/>
+              <text x="280" y="320" font-family="Space Grotesk" font-weight="800" font-size="7" letter-spacing="1" fill="#0A1A2E" text-anchor="middle">IMPRESUB</text>
+            </g>
+
+            <!-- DRILLSHIP docked (right side) -->
+            <g class="mob-vessel">
+              <!-- hull -->
+              <path d="M880,395 L1180,395 L1180,490 Q1180,510 1160,510 L900,510 Q880,510 880,490 Z"
+                    fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2.5"/>
+              <rect x="880" y="410" width="300" height="6" fill="#E8502D"/>
+              <text x="1030" y="475" font-family="Space Grotesk" font-weight="800" font-size="14" letter-spacing="3" fill="#0A1A2E" text-anchor="middle">DSV SATURN</text>
+              <!-- portholes -->
+              <circle cx="930" cy="440" r="6" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="970" cy="440" r="6" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="1100" cy="440" r="6" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="1140" cy="440" r="6" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- deck + structures -->
+              <rect x="880" y="370" width="300" height="25" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- mini derrick (orange) -->
+              <line x1="990" y1="370" x2="1000" y2="240" stroke="#E8502D" stroke-width="3"/>
+              <line x1="1050" y1="370" x2="1040" y2="240" stroke="#E8502D" stroke-width="3"/>
+              <line x1="995" y1="320" x2="1045" y2="320" stroke="#E8502D" stroke-width="2"/>
+              <line x1="998" y1="280" x2="1042" y2="280" stroke="#E8502D" stroke-width="2"/>
+              <rect x="1010" y="232" width="20" height="10" rx="1" fill="#E8502D"/>
+              <!-- gangway from dock to vessel -->
+              <path d="M870,440 L880,395 L900,395 L900,440 Z" fill="#7A8898" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- railing on gangway -->
+              <line x1="872" y1="437" x2="882" y2="395" stroke="#0A1A2E" stroke-width="1.5"/>
+            </g>
+
+            <!-- WALKING CREW (3 silhouettes walking toward vessel) -->
+            <g class="mob-crew mob-crew--1">
+              <rect x="-7" y="-50" width="6" height="50" fill="#1A2B47"/>
+              <rect x="2" y="-50" width="6" height="50" fill="#1A2B47"/>
+              <ellipse cx="-4" cy="0" rx="6" ry="2.5" fill="#0A0A0A"/>
+              <ellipse cx="5" cy="0" rx="6" ry="2.5" fill="#0A0A0A"/>
+              <path d="M-15,-128 L-15,-50 L15,-50 L15,-128 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-15,-100 L15,-100" stroke="#FAFAFA" stroke-width="2.5"/>
+              <!-- backpack/bag -->
+              <rect x="14" y="-105" width="14" height="22" rx="2" fill="#1A2B47" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- arms -->
+              <path d="M-14,-125 L-22,-95 L-15,-90 L-10,-118 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M14,-125 L22,-92 L15,-88 L10,-118 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- head -->
+              <circle cx="0" cy="-150" r="14" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-14,-160 Q0,-178 14,-160 L15,-156 L-15,-156 Z" fill="#FF8A4C" stroke="#0A1A2E" stroke-width="1.5"/>
+            </g>
+            <g class="mob-crew mob-crew--2">
+              <rect x="-7" y="-50" width="6" height="50" fill="#1A2B47"/>
+              <rect x="2" y="-50" width="6" height="50" fill="#1A2B47"/>
+              <ellipse cx="-4" cy="0" rx="6" ry="2.5" fill="#0A0A0A"/>
+              <ellipse cx="5" cy="0" rx="6" ry="2.5" fill="#0A0A0A"/>
+              <path d="M-15,-128 L-15,-50 L15,-50 L15,-128 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-15,-100 L15,-100" stroke="#FAFAFA" stroke-width="2.5"/>
+              <rect x="-26" y="-110" width="20" height="14" rx="2" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-14,-125 L-25,-110 L-22,-105 L-10,-118 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M14,-125 L18,-95 L11,-92 L10,-118 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="0" cy="-150" r="14" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-14,-160 Q0,-178 14,-160 L15,-156 L-15,-156 Z" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+            </g>
+            <g class="mob-crew mob-crew--3">
+              <rect x="-7" y="-50" width="6" height="50" fill="#1A2B47"/>
+              <rect x="2" y="-50" width="6" height="50" fill="#1A2B47"/>
+              <ellipse cx="-4" cy="0" rx="6" ry="2.5" fill="#0A0A0A"/>
+              <ellipse cx="5" cy="0" rx="6" ry="2.5" fill="#0A0A0A"/>
+              <path d="M-15,-128 L-15,-50 L15,-50 L15,-128 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-15,-100 L15,-100" stroke="#FAFAFA" stroke-width="2.5"/>
+              <!-- diving gear bag -->
+              <rect x="-26" y="-90" width="14" height="20" rx="2" fill="#1B4A6E" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-14,-125 L-22,-90 L-15,-85 L-10,-118 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M14,-125 L20,-100 L13,-96 L10,-118 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="0" cy="-150" r="14" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M-14,-160 Q0,-178 14,-160 L15,-156 L-15,-156 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
+            </g>
+
+            <!-- container stacks on the dock -->
+            <g class="mob-stack" opacity="0.85">
+              <rect x="430" y="380" width="50" height="60" rx="2" fill="#1B4A6E" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="480" y="380" width="50" height="60" rx="2" fill="#E8502D" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="455" y="320" width="50" height="60" rx="2" fill="#FFD600" stroke="#0A1A2E" stroke-width="2"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ─── OVERLAY 4: UNDERWATER DIVER ──────── -->
+      <div class="ov ov--uw" id="ov-uw" aria-hidden="true">
+        <div class="ov__bg ov__bg--uw">
+          <!-- light rays from surface -->
+          <div class="uw-rays"></div>
+          <!-- caustics shimmer -->
+          <div class="uw-caustics"></div>
+          <!-- bubbles -->
+          <div class="uw-bubble uw-bubble--1"></div>
+          <div class="uw-bubble uw-bubble--2"></div>
+          <div class="uw-bubble uw-bubble--3"></div>
+          <div class="uw-bubble uw-bubble--4"></div>
+          <div class="uw-bubble uw-bubble--5"></div>
+
+          <svg class="ov-uw__scene" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="diveSuit" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#1F3148"/>
+                <stop offset="100%" stop-color="#0A1A2E"/>
+              </linearGradient>
+              <radialGradient id="helmGlass" cx="0.4" cy="0.3" r="0.8">
+                <stop offset="0%"  stop-color="#7DD3FC" stop-opacity="0.7"/>
+                <stop offset="60%" stop-color="#1B4A6E" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#0A1A2E" stop-opacity="0.6"/>
+              </radialGradient>
+            </defs>
+
+            <!-- SUBSEA PIPELINE (foreground) -->
+            <g class="uw-pipeline">
+              <ellipse cx="800" cy="540" rx="380" ry="48" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="3"/>
+              <ellipse cx="800" cy="540" rx="380" ry="48" fill="none" stroke="#1B4A6E" stroke-width="2" stroke-dasharray="2 8"/>
+              <!-- joint flanges -->
+              <ellipse cx="500" cy="540" rx="14" ry="55" fill="#5D5552" stroke="#0A1A2E" stroke-width="2"/>
+              <ellipse cx="1000" cy="540" rx="14" ry="55" fill="#5D5552" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- ANODE (the cylinder he's inspecting) -->
+              <rect x="640" y="490" width="120" height="22" rx="3" fill="#9AA8B5" stroke="#0A1A2E" stroke-width="2"/>
+              <text x="700" y="505" font-family="Space Grotesk" font-weight="800" font-size="9" letter-spacing="1.5" fill="#0A1A2E" text-anchor="middle">ANODE · A-3</text>
+              <!-- corrosion hint -->
+              <ellipse cx="720" cy="510" rx="14" ry="3" fill="#E8502D" opacity="0.6"/>
+              <ellipse cx="690" cy="497" rx="8" ry="2" fill="#E8502D" opacity="0.4"/>
+            </g>
+
+            <!-- small fish silhouettes -->
+            <g class="uw-fish uw-fish--1" fill="#1B4A6E" opacity="0.6">
+              <path d="M0,0 Q-8,-4 -14,0 Q-8,4 0,0 L4,3 L4,-3 Z"/>
+            </g>
+            <g class="uw-fish uw-fish--2" fill="#082640" opacity="0.5">
+              <path d="M0,0 Q-6,-3 -10,0 Q-6,3 0,0 L3,2 L3,-2 Z"/>
+            </g>
+
+            <!-- THE DIVER (with camera) -->
+            <g class="uw-diver" transform="translate(440 360)">
+              <!-- swim fins -->
+              <ellipse cx="-25" cy="195" rx="22" ry="10" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="1.5" transform="rotate(-25 -25 195)"/>
+              <ellipse cx="25" cy="195" rx="22" ry="10" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="1.5" transform="rotate(25 25 195)"/>
+              <!-- legs -->
+              <path d="M-16,80 Q-20,140 -22,180 L-14,182 L-10,82 Z" fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M16,80 Q20,140 22,180 L14,182 L10,82 Z" fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- torso -->
+              <path d="M-32,-20 Q-32,-25 -25,-25 L25,-25 Q32,-25 32,-20 L36,80 L-36,80 Z"
+                    fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- weight belt -->
+              <rect x="-36" y="40" width="72" height="6" fill="#1A2B47" stroke="#0A1A2E" stroke-width="1.5"/>
+              <rect x="-12" y="38" width="6" height="10" fill="#FFD600"/>
+              <rect x="6" y="38" width="6" height="10" fill="#FFD600"/>
+              <!-- TANK on back (peeking) -->
+              <rect x="-44" y="-10" width="12" height="50" rx="6" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+              <rect x="32" y="-10" width="12" height="50" rx="6" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- left arm holding torch -->
+              <path d="M-32,-15 Q-50,0 -56,30 L-46,38 L-30,18 L-22,-8 Z"
+                    fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- torch beam -->
+              <path d="M-58,32 L-180,80 L-180,-10 L-58,16 Z" fill="#FFD27A" opacity="0.25"/>
+              <rect x="-66" y="22" width="20" height="12" rx="2" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="-50" cy="28" r="3" fill="#FFD27A"/>
+              <!-- right arm holding camera (raised) -->
+              <path d="M32,-15 Q52,-10 60,10 L52,22 L40,8 L24,-8 Z"
+                    fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M52,22 Q70,30 70,55 L60,62 L48,40 L42,28 Z"
+                    fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- CAMERA -->
+              <rect x="48" y="55" width="34" height="22" rx="3" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="60" cy="66" r="7" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="60" cy="66" r="4" fill="#1B4A6E"/>
+              <circle cx="60" cy="66" r="2" fill="#FAFAFA"/>
+              <!-- camera flash burst -->
+              <g class="uw-flash">
+                <circle cx="76" cy="50" r="3" fill="#FFFFFF"/>
+                <circle cx="76" cy="50" r="14" fill="#FFFFFF" opacity="0.4"/>
+                <circle cx="76" cy="50" r="22" fill="#FFFFFF" opacity="0.15"/>
+              </g>
+              <!-- HELMET (round, dive helmet with glass dome) -->
+              <circle cx="0" cy="-50" r="36" fill="url(#diveSuit)" stroke="#0A1A2E" stroke-width="2.5"/>
+              <!-- glass dome -->
+              <circle cx="0" cy="-52" r="24" fill="url(#helmGlass)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- face inside -->
+              <circle cx="0" cy="-52" r="18" fill="#FFCB8B" opacity="0.7"/>
+              <!-- eyes -->
+              <circle cx="-6" cy="-54" r="1.6" fill="#0A1A2E"/>
+              <circle cx="6" cy="-54" r="1.6" fill="#0A1A2E"/>
+              <!-- glass highlight -->
+              <ellipse cx="-8" cy="-60" rx="6" ry="3" fill="#FFFFFF" opacity="0.5" transform="rotate(-30 -8 -60)"/>
+              <!-- helmet bolts -->
+              <circle cx="-30" cy="-50" r="3" fill="#FFD600" stroke="#0A1A2E" stroke-width="1"/>
+              <circle cx="30" cy="-50" r="3" fill="#FFD600" stroke="#0A1A2E" stroke-width="1"/>
+              <circle cx="0" cy="-80" r="3" fill="#FFD600" stroke="#0A1A2E" stroke-width="1"/>
+              <!-- breathing tube -->
+              <path d="M-15,-25 Q-22,-15 -18,0" stroke="#1A2B47" stroke-width="3" fill="none"/>
+            </g>
+
+            <!-- floating PHOTO PREVIEWS (the shots he's taken) -->
+            <g class="uw-photos">
+              <g class="uw-photo uw-photo--1" transform="translate(220 180)">
+                <rect x="-35" y="-25" width="70" height="50" rx="3" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2" transform="rotate(-8)"/>
+                <rect x="-31" y="-21" width="62" height="42" fill="#1B4A6E" transform="rotate(-8)"/>
+                <text x="0" y="36" font-family="Space Grotesk" font-weight="700" font-size="6" fill="#FAFAFA" text-anchor="middle">IMG_0142</text>
+              </g>
+              <g class="uw-photo uw-photo--2" transform="translate(140 280)">
+                <rect x="-35" y="-25" width="70" height="50" rx="3" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2" transform="rotate(6)"/>
+                <rect x="-31" y="-21" width="62" height="42" fill="#3A4A5C" transform="rotate(6)"/>
+                <text x="0" y="36" font-family="Space Grotesk" font-weight="700" font-size="6" fill="#FAFAFA" text-anchor="middle">IMG_0143</text>
+              </g>
+              <g class="uw-photo uw-photo--3" transform="translate(180 100)">
+                <rect x="-35" y="-25" width="70" height="50" rx="3" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2" transform="rotate(-3)"/>
+                <rect x="-31" y="-21" width="62" height="42" fill="#082640" transform="rotate(-3)"/>
+                <text x="0" y="36" font-family="Space Grotesk" font-weight="700" font-size="6" fill="#FAFAFA" text-anchor="middle">IMG_0144</text>
+              </g>
+            </g>
+          </svg>
+
+          <!-- depth indicator HUD -->
+          <div class="uw-hud">
+            <div class="uw-hud__row"><span>DEPTH</span><b>-42 m</b></div>
+            <div class="uw-hud__row"><span>O₂</span><b>78%</b></div>
+            <div class="uw-hud__row"><span>SHOTS</span><b id="uw-shots">0</b></div>
+          </div>
+        </div>
+      </div>
+      <!-- ─── OVERLAY 5: END CARD — credits ───────────── -->
+      <div class="ov ov--end" id="ov-end" aria-hidden="true">
+        <div class="ov__bg ov__bg--end">
+          <div class="end-card">
+            <div class="end-card__brand">
+              <img class="end-card__logo"
+                   src="https://www.impresub.com/wp-content/uploads/2021/07/logo.png"
+                   alt="IMPRESUB" referrerpolicy="no-referrer"/>
+            </div>
+            <div class="end-card__title">
+              <span class="end-card__deck">DECK</span>
+              <span class="end-card__tag">a film about work that finally gets done</span>
+            </div>
+            <div class="end-card__credits">
+              <div class="credit-row">
+                <span class="credit-row__role">DIRECTED · DESIGNED · BUILT BY</span>
+                <span class="credit-row__name">MOHAMED ZAGHLOUL</span>
+              </div>
+              <div class="credit-row">
+                <span class="credit-row__role">FOR</span>
+                <span class="credit-row__name">IMPRESUB · OFFSHORE MARINE SERVICES</span>
+              </div>
+              <div class="credit-row">
+                <span class="credit-row__role">SOUND · CODE · ILLUSTRATION</span>
+                <span class="credit-row__name">ALL ORIGINAL · WEB AUDIO API · PURE SVG</span>
+              </div>
+              <div class="credit-row">
+                <span class="credit-row__role">FILMED IN</span>
+                <span class="credit-row__name">ONE BROWSER · NO LIBRARIES · 2026</span>
+              </div>
+            </div>
+            <div class="end-card__motto">
+              NO APPS &nbsp;·&nbsp; NO FORMS &nbsp;·&nbsp; JUST WHATSAPP
+            </div>
+            <div class="end-card__contact">
+              <a class="end-card__btn end-card__btn--primary" href="#close" id="end-cta-pilot">
+                ▶ START THE 30-DAY PILOT
+              </a>
+              <button class="end-card__btn end-card__btn--ghost" id="end-cta-replay" type="button">
+                ↻ REPLAY THE FILM
+              </button>
+            </div>
+            <div class="end-card__sig">
+              © 2026 · A PROTOTYPE · MADE WITH <span class="sig-heart">◆</span> IN CAIRO
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /overlays -->
+
+      <!-- iris wipe overlay for cinematic transitions -->
+      <div class="iris" id="iris" aria-hidden="true"></div>
+
+      <!-- chapter navigation strip (visible in fullscreen) -->
+      <div class="chapters" id="chapters" aria-label="Scene navigation">
+        <button class="chapter" data-scene="0" title="Cairo HQ — The Intake">
+          <span class="chapter__num">01</span><span class="chapter__name">INTAKE</span>
+        </button>
+        <button class="chapter" data-scene="1" title="The Setup">
+          <span class="chapter__num">02</span><span class="chapter__name">SETUP</span>
+        </button>
+        <button class="chapter" data-scene="2" title="Mobilization">
+          <span class="chapter__num">03</span><span class="chapter__name">MOB</span>
+        </button>
+        <button class="chapter" data-scene="3" title="On Station">
+          <span class="chapter__num">04</span><span class="chapter__name">STATION</span>
+        </button>
+        <button class="chapter" data-scene="4" title="Subsea Dive">
+          <span class="chapter__num">05</span><span class="chapter__name">SUBSEA</span>
+        </button>
+        <button class="chapter" data-scene="5" title="The Report">
+          <span class="chapter__num">06</span><span class="chapter__name">REPORT</span>
+        </button>
+        <button class="chapter" data-scene="6" title="The Invoice">
+          <span class="chapter__num">07</span><span class="chapter__name">INVOICE</span>
+        </button>
+        <button class="chapter" data-scene="7" title="Payables">
+          <span class="chapter__num">08</span><span class="chapter__name">AP</span>
+        </button>
+        <button class="chapter" data-scene="8" title="The Quiet">
+          <span class="chapter__num">09</span><span class="chapter__name">QUIET</span>
+        </button>
+      </div>
+
+      <!-- play/pause hint badge -->
+      <div class="film-hud" id="film-hud">
+        <kbd>SPACE</kbd> pause
+        <kbd>←/→</kbd> scenes
+        <kbd>M</kbd> mute
+        <kbd>ESC</kbd> exit
+      </div>
+
+      <!-- chyron / scene caption at bottom -->
+      <div class="theater__chyron" id="chyron" aria-live="polite">
+        <span class="chyron__num">SCENE 01 / 09</span>
+        <span class="chyron__title">CAIRO HQ — THE INTAKE</span>
+      </div>
+
+      <!-- progress bar -->
+      <div class="theater__progress" id="progress">
+        <div class="progress__bar" id="progress-bar"></div>
+      </div>
+
+      <!-- PHONE — rises out of 'pocket' on play -->
+      <div class="phone phone--held" id="phone">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+
+        <!-- WhatsApp chat header -->
+        <div class="wa__header">
+          <button class="wa__back" aria-label="back">‹</button>
+          <div class="wa__avatar">
+            <span>◐</span>
+            <i class="online" title="online"></i>
+          </div>
+          <div class="wa__title">
+            <div class="wa__name">DECK <span class="verified" title="verified">✓</span></div>
+            <div class="wa__status" id="wa-status">online</div>
+          </div>
+          <div class="wa__icons">
+            <span aria-hidden="true">📞</span>
+            <span aria-hidden="true">⋮</span>
+          </div>
+        </div>
+
+        <!-- chat body -->
+        <div class="wa__body" id="chat">
+          <div class="wa__date">TODAY · 17 APR 2026</div>
+          <div class="wa__system">🔒 Messages are end-to-end encrypted.</div>
+        </div>
+
+        <!-- quick reply chips (suggestions) -->
+        <div class="wa__suggest" id="suggest"></div>
+
+        <!-- input bar -->
+        <div class="wa__input">
+          <button class="wa__attach" aria-label="attach">＋</button>
+          <input id="input" type="text" placeholder="Message" autocomplete="off" />
+          <button class="wa__send" id="send" aria-label="send">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <button class="wa__mic" id="mic" aria-label="voice note" title="hold to record (click to simulate)">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3"/></svg>
+          </button>
+        </div>
+
+      </div>
+      <div class="phone__home"></div>
+    </div>
+      <!-- /phone -->
+
+      <!-- connection beam — data flying from phone to ERPNext -->
+      <div class="atm atm--beam" id="beam" aria-hidden="true">
+        <div class="beam__particles"></div>
+      </div>
+
+      <!-- scene labels -->
+      <div class="theater__chip theater__chip--tl">
+        <i class="dot"></i> ABOARD · DSV SATURN
+      </div>
+      <div class="theater__chip theater__chip--tr">
+        18:47 GST · BLOCK 9
+      </div>
+      <div class="theater__chip theater__chip--br">
+        <span class="gps">25°41'N · 54°37'E</span>
+      </div>
+
+      <!-- curtain overlay — "tap to begin" -->
+      <div class="theater__curtain" id="curtain">
+        <div class="curtain__inner">
+          <div class="curtain__eyebrow">
+            <span class="curtain__pulse"></span>
+            INTERACTIVE FILM · 90 SECONDS
+          </div>
+          <h3 class="curtain__title">
+            Watch Marco file his daily report<br/>
+            <em>without opening an app.</em>
+          </h3>
+          <button class="curtain__play" id="play" type="button">
+            <span class="curtain__play-ring"></span>
+            <span class="curtain__play-icon">▶</span>
+          </button>
+          <div class="curtain__hint">Tap to begin · or scroll past to try it yourself</div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /theater -->
+
+    <!-- ╔═══ HQ MILAN DASHBOARD — RIGHT SIDE ═════════════════╗ -->
+    <div class="hq">
+      <div class="hq__bar">
+        <div class="hq__tag">
+          <i class="hq__dot"></i>
+          <span>MILAN · HQ · OPS ROOM</span>
+        </div>
+        <div class="hq__clock"><span id="hq-clock">16:47</span> CEST · LIVE</div>
+      </div>
+      <div class="hq__ticker">
+        <span class="ticker__pulse"></span>
+        <div class="ticker__viewport">
+          <div class="ticker__track" id="hq-ticker">
+            <span class="ticker__item">5 vessels active worldwide</span>
+            <span class="ticker__item">3 DPRs awaiting client approval</span>
+            <span class="ticker__item">12 invoices auto-issued today</span>
+            <span class="ticker__item">€680K in AR collected this week</span>
+            <span class="ticker__item">Block 9 · Saadiyat-2 · day 14 of 30</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- ─── ERPNEXT DASHBOARD ─────────────────────────────────── -->
+    <div class="erp">
+      <div class="erp__head">
+        <div class="erp__brand">
+          <span class="erp__mark">▮</span>
+          <span>ERPNext</span>
+          <span class="erp__sep">/</span>
+          <span class="erp__crumb">IMPRESUB · Operations · Milan</span>
+        </div>
+        <div class="erp__live">
+          <span class="pulse"></span> LIVE
+        </div>
+      </div>
+
+      <div class="erp__tabs">
+        <div class="tab tab--active">Daily Reports</div>
+        <div class="tab">Expenses</div>
+        <div class="tab">Crew</div>
+        <div class="tab">Assets</div>
+      </div>
+
+      <div class="erp__filters">
+        <div class="chip">PRJ-AD-SAAD-2 · Saadiyat-2</div>
+        <div class="chip">DSV Saturn</div>
+        <div class="chip">17 Apr 2026</div>
+      </div>
+
+      <!-- live activity feed -->
+      <div class="erp__activity" id="activity">
+        <div class="activity__placeholder">
+          Awaiting field input from <b>DSV Saturn</b>…<br/>
+          <span>Last sync: 2 min ago</span>
+        </div>
+      </div>
+
+      <!-- detailed forms (filled live as the chat progresses) -->
+      <div class="erp__doc" id="doc-report" hidden>
+        <div class="doc__head">
+          <div class="doc__type">Daily Report</div>
+          <div class="doc__id">DR-24817</div>
+          <div class="doc__status status--draft" id="report-status">Draft</div>
+        </div>
+        <dl class="doc__grid">
+          <div><dt>Project</dt><dd id="f-project">—</dd></div>
+          <div><dt>Vessel</dt><dd id="f-vessel">—</dd></div>
+          <div><dt>Engineer</dt><dd id="f-engineer">—</dd></div>
+          <div><dt>Date</dt><dd id="f-date">—</dd></div>
+          <div><dt>Activity</dt><dd id="f-activity">—</dd></div>
+          <div><dt>Asset</dt><dd id="f-asset">—</dd></div>
+          <div><dt>Sea State</dt><dd id="f-sea">—</dd></div>
+          <div><dt>Incidents</dt><dd id="f-incidents">—</dd></div>
+          <div class="full"><dt>Medical Notes</dt><dd id="f-medical">—</dd></div>
+        </dl>
+      </div>
+
+      <div class="erp__doc" id="doc-expense" hidden>
+        <div class="doc__head">
+          <div class="doc__type">Expense Claim</div>
+          <div class="doc__id" id="exp-id">EXP-09142</div>
+          <div class="doc__status status--draft" id="exp-status">Draft</div>
+        </div>
+        <dl class="doc__grid">
+          <div><dt>Project</dt><dd id="e-project">—</dd></div>
+          <div><dt>Cost Center</dt><dd id="e-cc">—</dd></div>
+          <div><dt>Category</dt><dd id="e-cat">—</dd></div>
+          <div><dt>Amount</dt><dd id="e-amount">—</dd></div>
+          <div class="full"><dt>Description</dt><dd id="e-desc">—</dd></div>
+          <div class="full"><dt>Receipt</dt><dd id="e-receipt">pending</dd></div>
+        </dl>
+      </div>
+
+      <div class="erp__foot">
+        <div class="erp__legend">
+          <span class="dotled dotled--ok"></span> Auto-coded by DECK
+          <span class="dotled dotled--info"></span> Inferred from GPS / vessel AIS
+        </div>
+        <div class="erp__id">node: ops-mil-03 · v3.2.4</div>
+      </div>
+    </div>
+    <!-- /erp -->
+    </div>
+    <!-- /hq -->
+
+  </div>
+
+  <!-- demo controls -->
+  <div class="demo__controls">
+    <button class="ctl ctl--reset" id="reset">↺ Reset demo</button>
+    <button class="ctl ctl--play" id="autoplay">▶ Auto-play story</button>
+    <div class="ctl__hint">Or just type <kbd>Hi</kbd> in the chat below.</div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT IV — WOW FEATURES                                        ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section id="wow" class="wow">
+  <div class="kicker">THE THREE INSANE THINGS</div>
+  <h2>Three features that make the room go quiet.</h2>
+
+  <div class="wow__grid">
+    <article class="wow__card">
+      <div class="wow__icon">🌊</div>
+      <div class="wow__num">01</div>
+      <h3>Geo-Aware Project Inference</h3>
+      <p>DECK never asks <em>"which project?"</em> It already knows. Vessel AIS + phone GPS auto-resolve project, cost center, and client — before the engineer types the first letter.</p>
+      <div class="wow__metric"><b>3–5%</b> project margin recovered.</div>
+    </article>
+
+    <article class="wow__card">
+      <div class="wow__icon">🛰️</div>
+      <div class="wow__num">02</div>
+      <h3>Sat-Lag Mode (Offline-Native)</h3>
+      <p>Beyond 12 miles, bandwidth is precious. WhatsApp queues the voice note natively. The instant a packet of bandwidth opens — even 800ms — DECK transmits, transcribes, and posts. With the original capture timestamp preserved.</p>
+      <div class="wow__metric"><b>Zero</b> data loss. Compliance-grade.</div>
+    </article>
+
+    <article class="wow__card wow__card--hero">
+      <div class="wow__icon">🎙️</div>
+      <div class="wow__num">03</div>
+      <h3>Mess Hall Mode</h3>
+      <p>The killer trick. DECK detects when an engineer is <em>describing yesterday in past tense, casually, mid-sentence</em> — and silently extracts the report. No commands. No mode-switching. <b>You just talk about your day.</b></p>
+      <div class="wow__metric"><b>Zero</b> training needed.</div>
+    </article>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT IV.0 — THE COMPLETE CYCLE                                ║
+     ║  Six scenes, one company, one agent, one operating system.    ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section id="cycle" class="cycle">
+  <div class="cycle__head">
+    <div class="kicker kicker--teal">THE COMPLETE CYCLE</div>
+    <h2>From the CEO's inbox<br/><em>to the supplier's payment.</em></h2>
+    <p class="cycle__sub">DECK is not one workflow. It is the connective tissue between every desk in the company — Maged in Cairo, Karim in Technical, Marco offshore, Suppliers worldwide. Six scenes. One agent. One thread.</p>
+  </div>
+
+  <!-- ═══════ SCENE 01 — THE INTAKE — Maged the CEO ═══════ -->
+  <article class="scene-card scene-card--ceo">
+    <header class="scene-card__bar">
+      <div class="scene-card__num">SCENE 01</div>
+      <div class="scene-card__title">THE INTAKE</div>
+      <div class="scene-card__loc">Cairo · 09:14 EET</div>
+    </header>
+
+    <div class="scene-card__body">
+      <!-- LEFT: cinematic office illustration -->
+      <div class="office-scene">
+        <!-- atmosphere: warm office light -->
+        <div class="office__sky"></div>
+        <div class="office__sun"></div>
+
+        <!-- big window showing the sea (continuity with Marco's vessel) -->
+        <svg class="office__window" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="winSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#88C9E8"/>
+              <stop offset="60%" stop-color="#FFD9B0"/>
+              <stop offset="100%" stop-color="#FFB082"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="300" fill="url(#winSky)"/>
+          <!-- sun -->
+          <circle cx="290" cy="95" r="38" fill="#FFE6B3" opacity="0.9"/>
+          <!-- sea horizon -->
+          <rect x="0" y="170" width="400" height="130" fill="#1B4A6E"/>
+          <line x1="0" y1="170" x2="400" y2="170" stroke="#FFD27A" stroke-width="1.5" opacity="0.6"/>
+          <!-- distant vessel (Marco's vessel — tiny on horizon!) -->
+          <g opacity="0.85">
+            <path d="M150,168 L160,164 L240,164 L250,168 L246,174 L154,174 Z" fill="#0A1A2E"/>
+            <line x1="195" y1="164" x2="200" y2="148" stroke="#E8502D" stroke-width="2"/>
+            <line x1="180" y1="164" x2="200" y2="148" stroke="#E8502D" stroke-width="1.5"/>
+            <line x1="220" y1="164" x2="200" y2="148" stroke="#E8502D" stroke-width="1.5"/>
+            <circle cx="200" cy="148" r="1.3" fill="#FFD27A">
+              <animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+          <!-- a tiny helicopter approaching it -->
+          <g class="window__heli">
+            <ellipse cx="0" cy="0" rx="12" ry="3" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1"/>
+            <line x1="-6" y1="-1" x2="-14" y2="-2" stroke="#0A1A2E" stroke-width="1"/>
+            <ellipse cx="-2" cy="-5" rx="14" ry="0.8" fill="#0A1A2E" opacity="0.5">
+              <animate attributeName="rx" values="14;3;14" dur="0.18s" repeatCount="indefinite"/>
+            </ellipse>
+            <animateTransform attributeName="transform" type="translate"
+                              values="380 60; 280 110; 220 130" dur="14s" repeatCount="indefinite"/>
+          </g>
+          <!-- birds -->
+          <path d="M60,90 Q63,86 66,90 Q69,86 72,90" stroke="#0A1A2E" stroke-width="1.2" fill="none"/>
+          <path d="M80,110 Q83,107 86,110 Q89,107 92,110" stroke="#0A1A2E" stroke-width="1" fill="none"/>
+        </svg>
+
+        <!-- window frame -->
+        <div class="office__window-frame"></div>
+        <!-- vertical blinds hint -->
+        <div class="office__blinds"></div>
+
+        <!-- wall and floor -->
+        <div class="office__wall"></div>
+        <div class="office__floor"></div>
+
+        <!-- framed certificate on the wall -->
+        <div class="office__cert">
+          <div class="cert__line"></div>
+          <div class="cert__line cert__line--short"></div>
+          <div class="cert__seal">◆ ISO</div>
+        </div>
+
+        <!-- desk + laptop + coffee + Maged -->
+        <svg class="office__desk-scene" viewBox="0 0 800 600" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <defs>
+            <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#1F3148"/>
+              <stop offset="100%" stop-color="#0E1E2E"/>
+            </linearGradient>
+            <linearGradient id="deskWood" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#5D3A24"/>
+              <stop offset="100%" stop-color="#3A2316"/>
+            </linearGradient>
+            <linearGradient id="laptopShine" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#2A2F38"/>
+              <stop offset="100%" stop-color="#1A1E25"/>
+            </linearGradient>
+          </defs>
+
+          <!-- DESK -->
+          <path d="M40,470 L760,470 L750,520 L50,520 Z" fill="url(#deskWood)" stroke="#0A1A2E" stroke-width="2"/>
+          <rect x="40" y="465" width="720" height="8" fill="#7A4E32" stroke="#0A1A2E" stroke-width="1.5"/>
+          <!-- desk edge highlight -->
+          <line x1="50" y1="470" x2="750" y2="470" stroke="#A06D4A" stroke-width="1.5" opacity="0.7"/>
+
+          <!-- COFFEE MUG (right side of desk) -->
+          <g class="desk-coffee">
+            <ellipse cx="640" cy="466" rx="28" ry="6" fill="#0A1A2E" opacity="0.4"/>
+            <path d="M615,420 L615,455 Q615,468 640,468 Q665,468 665,455 L665,420 Z"
+                  fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+            <path d="M665,432 Q680,432 680,442 Q680,452 665,452" stroke="#0A1A2E" stroke-width="2" fill="none"/>
+            <ellipse cx="640" cy="420" rx="25" ry="5" fill="#5D3A24" stroke="#0A1A2E" stroke-width="1.5"/>
+            <ellipse cx="640" cy="418" rx="22" ry="3" fill="#7A4E32"/>
+            <!-- IMPRESUB on mug -->
+            <text x="640" y="448" font-family="Space Grotesk" font-weight="800" font-size="6" letter-spacing="1.5" fill="#E8502D" text-anchor="middle">IMPRESUB</text>
+            <!-- steam -->
+            <g class="steam" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6">
+              <path d="M635,415 Q633,405 638,395 Q642,385 638,375"/>
+              <path d="M645,415 Q647,403 643,393 Q639,383 645,373"/>
+            </g>
+          </g>
+
+          <!-- PAPERS / NOTEBOOK -->
+          <g>
+            <rect x="120" y="445" width="100" height="22" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5" transform="rotate(-3 170 456)"/>
+            <line x1="135" y1="453" x2="200" y2="450" stroke="#0A1A2E" stroke-width="0.6" opacity="0.5"/>
+            <line x1="135" y1="458" x2="195" y2="455" stroke="#0A1A2E" stroke-width="0.6" opacity="0.5"/>
+            <line x1="135" y1="462" x2="190" y2="460" stroke="#0A1A2E" stroke-width="0.6" opacity="0.5"/>
+          </g>
+
+          <!-- LAPTOP (open, screen facing camera) -->
+          <g class="desk-laptop">
+            <!-- base -->
+            <path d="M250,460 L530,460 L545,475 L235,475 Z" fill="#1F1F1F" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- screen back -->
+            <path d="M270,460 L520,460 L520,310 L270,310 Z" fill="url(#laptopShine)" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- screen content (email app) -->
+            <rect x="278" y="318" width="234" height="138" fill="#F4F4F2"/>
+            <!-- email header bar -->
+            <rect x="278" y="318" width="234" height="18" fill="#0A2540"/>
+            <text x="285" y="330" font-family="Space Grotesk" font-weight="700" font-size="7" letter-spacing="1.5" fill="#FFFFFF">📧 INBOX · 1 NEW</text>
+            <circle cx="498" cy="327" r="4" fill="#E8502D">
+              <animate attributeName="opacity" values="1;.3;1" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <text x="498" y="330" font-family="Space Grotesk" font-weight="900" font-size="6" fill="#FFFFFF" text-anchor="middle">!</text>
+            <!-- email row 1 (highlighted, new) -->
+            <rect x="278" y="338" width="234" height="36" fill="#FFE6B3"/>
+            <rect x="278" y="338" width="3" height="36" fill="#E8502D"/>
+            <text x="286" y="348" font-family="Space Grotesk" font-weight="700" font-size="7" fill="#0A2540">FROM: PETROJET · CONTRACTS</text>
+            <text x="286" y="358" font-family="Space Grotesk" font-weight="600" font-size="7" fill="#0A2540">Subject: New Project — Underwater Survey · Block 9</text>
+            <text x="286" y="368" font-family="Space Grotesk" font-weight="400" font-size="6" fill="#3A4A5C">Scope of Work attached · Award pending review</text>
+            <text x="495" y="346" font-family="Space Grotesk" font-weight="700" font-size="6" fill="#3A4A5C" text-anchor="end">09:14</text>
+            <!-- attachment chip -->
+            <rect x="286" y="350" width="40" height="6" rx="2" fill="none" stroke="#3A4A5C" stroke-width="0.5"/>
+            <text x="306" y="355" font-family="Space Grotesk" font-size="4.5" fill="#3A4A5C" text-anchor="middle">📎 SoW.pdf</text>
+            <!-- other emails (faded) -->
+            <rect x="278" y="378" width="234" height="22" fill="#FAFAFA"/>
+            <text x="286" y="390" font-family="Space Grotesk" font-weight="600" font-size="6" fill="#7A8898">PETROBEL — Re: PRJ-2025-0992</text>
+            <rect x="278" y="402" width="234" height="22" fill="#FAFAFA"/>
+            <text x="286" y="414" font-family="Space Grotesk" font-weight="600" font-size="6" fill="#7A8898">BURULLUS — Q3 Schedule Update</text>
+            <!-- forward icon glowing (Maged is about to forward) -->
+            <g class="forward-icon">
+              <circle cx="495" cy="395" r="9" fill="#E8502D">
+                <animate attributeName="r" values="8;11;8" dur="1.4s" repeatCount="indefinite"/>
+              </circle>
+              <text x="495" y="398" font-family="Space Grotesk" font-weight="900" font-size="9" fill="#FFFFFF" text-anchor="middle">↪</text>
+            </g>
+            <!-- glowing edge -->
+            <rect x="270" y="310" width="250" height="150" fill="none" stroke="#FFD27A" stroke-width="0.5" opacity="0.4">
+              <animate attributeName="opacity" values=".2;.7;.2" dur="2.2s" repeatCount="indefinite"/>
+            </rect>
+          </g>
+
+          <!-- MAGED THE CEO (sitting behind desk, profile-ish) -->
+          <g class="ceo" transform="translate(165 470)">
+            <!-- CHAIR back peeking -->
+            <path d="M-60,-10 Q-65,-100 -45,-110 L-30,-110 L-30,-10 Z" fill="#1A2B47" stroke="#0A1A2E" stroke-width="1.5"/>
+            <!-- TORSO (suit) -->
+            <path d="M-50,-10 Q-50,-90 -25,-100 L25,-100 Q50,-90 50,-10 Z"
+                  fill="url(#suit)" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- SHIRT collar V -->
+            <path d="M-12,-100 L0,-78 L12,-100 L0,-95 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.2"/>
+            <!-- TIE (orange — IMPRESUB color) -->
+            <path d="M-3,-90 L3,-90 L4,-78 L0,-72 L-4,-78 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="0.8"/>
+            <path d="M-3,-72 L3,-72 L5,-30 L0,-25 L-5,-30 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="0.8"/>
+
+            <!-- LEFT ARM (resting on desk, hand near phone) -->
+            <path d="M-50,-80 Q-58,-60 -56,-30 Q-54,-10 -38,-8 L-25,-12 L-25,-50 Q-30,-65 -40,-78 Z"
+                  fill="url(#suit)" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- left hand -->
+            <ellipse cx="-32" cy="-10" rx="9" ry="6" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.2"/>
+
+            <!-- RIGHT ARM (raised, holding phone) -->
+            <path d="M50,-80 Q60,-65 64,-45 L52,-30 L40,-50 L30,-70 Z"
+                  fill="url(#suit)" stroke="#0A1A2E" stroke-width="2"/>
+            <path d="M52,-30 Q60,-15 50,5 L40,10 L30,-5 L40,-25 Z"
+                  fill="url(#suit)" stroke="#0A1A2E" stroke-width="2"/>
+            <!-- right hand -->
+            <circle cx="44" cy="8" r="9" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.2"/>
+            <!-- PHONE in right hand (showing DECK chat) -->
+            <rect x="32" y="-22" width="22" height="34" rx="3" fill="#0A0A0A" stroke="#0A1A2E" stroke-width="1.2"/>
+            <rect x="34" y="-19" width="18" height="26" rx="1" fill="#0B141A"/>
+            <!-- WhatsApp green header -->
+            <rect x="34" y="-19" width="18" height="5" fill="#1F2C34"/>
+            <circle cx="38" cy="-16.5" r="1.4" fill="#FF8A4C"/>
+            <!-- chat bubble (DECK reply) -->
+            <rect x="36" y="-12" width="14" height="4" rx="1" fill="#1F2C34"/>
+            <rect x="38" y="-7" width="12" height="4" rx="1" fill="#005C4B"/>
+            <rect x="36" y="-2" width="11" height="4" rx="1" fill="#1F2C34"/>
+            <!-- screen glow on hand -->
+            <ellipse cx="44" cy="-5" rx="14" ry="6" fill="#7DD3FC" opacity="0.2"/>
+
+            <!-- HEAD -->
+            <!-- neck -->
+            <rect x="-7" y="-110" width="14" height="14" fill="#E5B47A"/>
+            <!-- face -->
+            <path d="M-23,-145 Q-25,-118 -16,-110 Q0,-104 16,-110 Q25,-118 23,-145
+                     Q22,-160 0,-162 Q-22,-160 -23,-145 Z"
+                  fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+            <!-- ears -->
+            <ellipse cx="-24" cy="-138" rx="3" ry="6" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1"/>
+            <ellipse cx="24"  cy="-138" rx="3" ry="6" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1"/>
+            <!-- salt-and-pepper hair (silver fox CEO) -->
+            <path d="M-22,-152 Q0,-172 22,-152 L22,-148 Q0,-156 -22,-148 Z"
+                  fill="#3A4658" stroke="#0A1A2E" stroke-width="1.2"/>
+            <path d="M-18,-156 Q-12,-160 -8,-156" stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.7"/>
+            <path d="M10,-156 Q14,-160 18,-156" stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.7"/>
+            <!-- eyebrows -->
+            <path d="M-14,-145 Q-9,-148 -4,-146" stroke="#3A2A1A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M4,-146 Q9,-148 14,-145" stroke="#3A2A1A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <!-- GLASSES -->
+            <circle cx="-9" cy="-138" r="6" fill="none" stroke="#0A1A2E" stroke-width="1.5"/>
+            <circle cx="9"  cy="-138" r="6" fill="none" stroke="#0A1A2E" stroke-width="1.5"/>
+            <line x1="-3" y1="-138" x2="3" y2="-138" stroke="#0A1A2E" stroke-width="1.5"/>
+            <line x1="-15" y1="-140" x2="-22" y2="-138" stroke="#0A1A2E" stroke-width="1.5"/>
+            <line x1="15"  y1="-140" x2="22"  y2="-138" stroke="#0A1A2E" stroke-width="1.5"/>
+            <!-- eyes (behind glasses) -->
+            <circle cx="-9" cy="-138" r="1.8" fill="#1A4D6E"/>
+            <circle cx="9"  cy="-138" r="1.8" fill="#1A4D6E"/>
+            <circle cx="-8.3" cy="-138.5" r="0.5" fill="#FFFFFF"/>
+            <circle cx="9.7"  cy="-138.5" r="0.5" fill="#FFFFFF"/>
+            <!-- nose -->
+            <path d="M-2,-134 Q-3,-128 -1,-124 L1,-124 Q3,-128 2,-134 Z"
+                  fill="#E5B47A" opacity="0.7"/>
+            <!-- mouth (slight thoughtful smile) -->
+            <path d="M-7,-118 Q-3,-115 0,-115 Q3,-115 7,-118" stroke="#0A1A2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- stubble (well-groomed) -->
+            <ellipse cx="0" cy="-114" rx="14" ry="4" fill="#3A2A1A" opacity="0.1"/>
+
+            <!-- NAME tag floating above -->
+            <g class="ceo-tag">
+              <rect x="-50" y="-200" width="100" height="22" rx="3"
+                    fill="rgba(10,22,40,.85)" stroke="#E8502D" stroke-width="1"/>
+              <text x="0" y="-191" font-family="Space Grotesk" font-weight="800" font-size="9" letter-spacing="2" fill="#FFFFFF" text-anchor="middle">MAGED · CEO</text>
+              <text x="0" y="-182" font-family="Space Grotesk" font-weight="500" font-size="6" letter-spacing="1.5" fill="#FF8A4C" text-anchor="middle">IMPRESUB · CAIRO HQ</text>
+              <path d="M-5,-178 L0,-172 L5,-178 Z" fill="rgba(10,22,40,.85)"/>
+            </g>
+          </g>
+        </svg>
+
+        <!-- floating system status badges (right side) -->
+        <div class="office__hud office__hud--in"><span class="hud__dot"></span> EMAIL RECEIVED · 09:14</div>
+        <div class="office__hud office__hud--out"><span class="hud__dot hud__dot--ok"></span> FORWARDED → DECK</div>
+      </div>
+
+      <!-- RIGHT: workflow + chat + system effect -->
+      <aside class="scene-card__side">
+        <div class="scene-card__step">STEP 01 · INTAKE</div>
+        <h3 class="scene-card__h">Maged forwards. DECK creates the project.</h3>
+        <p class="scene-card__desc">A scope arrives by email, fax, or hard copy from PETROJET, PETROBEL or BURULLUS. Maged forwards it to DECK. The agent extracts every field, creates the Project Record, attaches the Scope of Work, and routes it to Technical for review — in <strong>under 12 seconds</strong>.</p>
+
+        <!-- mini chat replay -->
+        <div class="mini-chat">
+          <div class="mini-chat__head">
+            <span class="mini-chat__avatar">◐</span>
+            <span class="mini-chat__name">DECK · IMPRESUB AI</span>
+            <span class="mini-chat__verified">✓</span>
+          </div>
+          <div class="mini-chat__body">
+            <div class="mini-bubble mini-bubble--out">📧 [forwarded email · PetroJet · SoW.pdf]</div>
+            <div class="mini-bubble mini-bubble--in">
+              <strong>New project intake detected.</strong><br/>
+              Client: <em>PETROJET · Contracts Dept.</em><br/>
+              Scope: <em>Underwater Survey · Block 9 · 30 days est.</em>
+            </div>
+            <div class="mini-bubble mini-bubble--in mini-bubble--card">
+              <div class="mini-card-bar">PROJECT CREATED</div>
+              <div class="mini-card-row"><span>ID</span><b>PRJ-2026-0118</b></div>
+              <div class="mini-card-row"><span>Status</span><b class="badge-status badge-status--new">NEW</b></div>
+              <div class="mini-card-row"><span>Routed to</span><b>Eng. Karim · Technical</b></div>
+              <div class="mini-card-row"><span>SLA</span><b>Review in 24h</b></div>
+            </div>
+            <div class="mini-bubble mini-bubble--out">👍</div>
+            <div class="mini-bubble mini-bubble--in">Karim notified. I'll ping you when his review lands.</div>
+          </div>
+        </div>
+
+        <!-- system effects -->
+        <div class="sys-effects">
+          <div class="sys-effect">
+            <span class="sys-effect__lbl">ERPNext</span>
+            <span class="sys-effect__val">+ Project · PRJ-2026-0118</span>
+          </div>
+          <div class="sys-effect">
+            <span class="sys-effect__lbl">Drive</span>
+            <span class="sys-effect__val">+ Folder · /clients/petrojet/2026/PRJ-0118/</span>
+          </div>
+          <div class="sys-effect">
+            <span class="sys-effect__lbl">Notify</span>
+            <span class="sys-effect__val">→ karim@impresub · push + email</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  <!-- ═══════ SCENES 02-06 — compact strip ═══════ -->
+  <div class="cycle__strip">
+
+    <!-- SCENE 02 — Technical -->
+    <article class="strip-card">
+      <div class="strip-card__num">SCENE 02</div>
+      <div class="strip-card__title">THE REVIEW</div>
+      <div class="strip-card__icon">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="14" y="20" width="52" height="36" rx="3" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+          <rect x="18" y="24" width="44" height="28" fill="#7DD3FC"/>
+          <line x1="22" y1="32" x2="50" y2="32" stroke="#0A1A2E" stroke-width="1.5"/>
+          <line x1="22" y1="38" x2="44" y2="38" stroke="#0A1A2E" stroke-width="1.5"/>
+          <line x1="22" y1="44" x2="48" y2="44" stroke="#0A1A2E" stroke-width="1.5"/>
+          <rect x="32" y="56" width="16" height="6" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+          <!-- Karim (mini) -->
+          <circle cx="62" cy="64" r="6" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.2"/>
+          <path d="M58,60 Q62,55 66,60" fill="#1A2B47"/>
+        </svg>
+      </div>
+      <p class="strip-card__who">ENG. KARIM · TECHNICAL</p>
+      <p class="strip-card__desc">Reviews scope. Tags resources: <strong>Internal vs Freelancer · Owned vs Rented</strong>. Vessel + crew picked. Forwarded to Costing.</p>
+      <div class="strip-card__chat">
+        <div class="mini-bubble mini-bubble--in mini-bubble--xs">
+          Resources locked: <em>2 divers (internal) · 1 ROV pilot (freelancer) · DSV Saturn (owned) · 1 mob crane (rented).</em><br/>
+          Sent to costing.
+        </div>
+      </div>
+      <div class="strip-card__status">
+        <span class="badge-status badge-status--review">→ COSTING</span>
+      </div>
+    </article>
+
+    <!-- SCENE 03 — Cost & Quote -->
+    <article class="strip-card">
+      <div class="strip-card__num">SCENE 03</div>
+      <div class="strip-card__title">THE COST &amp; QUOTE</div>
+      <div class="strip-card__icon">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="16" y="14" width="48" height="56" rx="3" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+          <line x1="16" y1="22" x2="64" y2="22" stroke="#E8502D" stroke-width="2"/>
+          <line x1="22" y1="30" x2="58" y2="30" stroke="#0A1A2E" stroke-width="1" opacity="0.5"/>
+          <line x1="22" y1="36" x2="58" y2="36" stroke="#0A1A2E" stroke-width="1" opacity="0.5"/>
+          <line x1="22" y1="42" x2="58" y2="42" stroke="#0A1A2E" stroke-width="1" opacity="0.5"/>
+          <line x1="22" y1="48" x2="58" y2="48" stroke="#0A1A2E" stroke-width="1" opacity="0.5"/>
+          <rect x="22" y="54" width="36" height="10" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+          <text x="40" y="62" font-family="Space Grotesk" font-weight="800" font-size="6" fill="#0A1A2E" text-anchor="middle">$ 4.0M</text>
+        </svg>
+      </div>
+      <p class="strip-card__who">SARA · COSTING + ADMIN</p>
+      <p class="strip-card__desc">DECK drafts the cost sheet (manpower + equipment + vessel + mob). Admin applies margin. <strong>$1M cost → $4M quote.</strong> Quotation sent. Status tracked.</p>
+      <div class="strip-card__chat">
+        <div class="mini-bubble mini-bubble--in mini-bubble--xs">
+          Cost sheet ready: <em>$1.02M total.</em><br/>
+          Margin applied. Quotation <strong>$4.0M</strong> sent to PetroJet. Status: <em>SENT</em>.
+        </div>
+      </div>
+      <div class="strip-card__status">
+        <span class="badge-status badge-status--review">→ AWAITING AWARD</span>
+      </div>
+    </article>
+
+    <!-- SCENE 04 — The Field (LINK back to Marco) -->
+    <article class="strip-card strip-card--link">
+      <div class="strip-card__num">SCENE 04</div>
+      <div class="strip-card__title">THE FIELD</div>
+      <div class="strip-card__icon">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <!-- mini drillship -->
+          <path d="M10,52 Q14,62 26,64 L54,64 Q66,62 70,52 L66,50 L14,50 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+          <line x1="14" y1="52" x2="66" y2="52" stroke="#E8502D" stroke-width="1.5"/>
+          <!-- derrick -->
+          <line x1="34" y1="50" x2="38" y2="22" stroke="#E8502D" stroke-width="1.5"/>
+          <line x1="46" y1="50" x2="42" y2="22" stroke="#E8502D" stroke-width="1.5"/>
+          <line x1="36" y1="38" x2="44" y2="38" stroke="#E8502D" stroke-width="1"/>
+          <line x1="37" y1="30" x2="43" y2="30" stroke="#E8502D" stroke-width="1"/>
+          <rect x="36" y="20" width="8" height="3" fill="#E8502D"/>
+          <!-- marco -->
+          <circle cx="20" cy="46" r="3" fill="#FFCB8B"/>
+          <rect x="18" y="48" width="4" height="4" fill="#E8502D"/>
+        </svg>
+      </div>
+      <p class="strip-card__who">MARCO · OFFSHORE</p>
+      <p class="strip-card__desc">Award lands → mobilization → execution. Daily reports via voice note. DPRs every 15/30 days. Client approval triggers invoice.</p>
+      <div class="strip-card__chat">
+        <div class="mini-bubble mini-bubble--in mini-bubble--xs">
+          DPR-014 approved by client. <strong>Eligible for invoicing.</strong> Generating invoice INV-2026-0044…
+        </div>
+      </div>
+      <a href="#demo" class="strip-card__cta">▶ Watch Marco's full scene</a>
+      <div class="strip-card__status">
+        <span class="badge-status badge-status--ok">→ INVOICE READY</span>
+      </div>
+    </article>
+
+    <!-- SCENE 05 — The Invoice -->
+    <article class="strip-card">
+      <div class="strip-card__num">SCENE 05</div>
+      <div class="strip-card__title">THE INVOICE</div>
+      <div class="strip-card__icon">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="20" y="12" width="40" height="56" rx="2" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+          <line x1="24" y1="20" x2="56" y2="20" stroke="#0A1A2E" stroke-width="1"/>
+          <text x="40" y="28" font-family="Space Grotesk" font-weight="800" font-size="6" fill="#0A1A2E" text-anchor="middle">INVOICE</text>
+          <line x1="24" y1="34" x2="56" y2="34" stroke="#0A1A2E" stroke-width="0.5" opacity="0.5"/>
+          <line x1="24" y1="40" x2="56" y2="40" stroke="#0A1A2E" stroke-width="0.5" opacity="0.5"/>
+          <line x1="24" y1="46" x2="56" y2="46" stroke="#0A1A2E" stroke-width="0.5" opacity="0.5"/>
+          <rect x="26" y="52" width="28" height="10" fill="#25D366" stroke="#0A1A2E" stroke-width="1.5"/>
+          <text x="40" y="59" font-family="Space Grotesk" font-weight="800" font-size="5" fill="#0A1A2E" text-anchor="middle">PAID ✓</text>
+        </svg>
+      </div>
+      <p class="strip-card__who">DECK · AUTO-BILLER</p>
+      <p class="strip-card__desc">DPR approved → invoice request → invoice issued → sent → tracked. Status flips through Draft · Sent · Due · <strong>Paid</strong>. Zero finance team intervention.</p>
+      <div class="strip-card__chat">
+        <div class="mini-bubble mini-bubble--in mini-bubble--xs">
+          INV-2026-0044 sent to <em>petrojet.payables@…</em> · $620,000 · Due 30 days. CFO notified. AR aging updated.
+        </div>
+      </div>
+      <div class="strip-card__status">
+        <span class="badge-status badge-status--ok">→ COLLECTION</span>
+      </div>
+    </article>
+
+    <!-- SCENE 06 — The Payables -->
+    <article class="strip-card">
+      <div class="strip-card__num">SCENE 06</div>
+      <div class="strip-card__title">THE PAYABLES</div>
+      <div class="strip-card__icon">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <!-- email envelope -->
+          <rect x="12" y="20" width="42" height="28" rx="2" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+          <path d="M12,20 L33,38 L54,20" stroke="#0A1A2E" stroke-width="1.5" fill="none"/>
+          <!-- arrow -->
+          <line x1="56" y1="34" x2="62" y2="34" stroke="#E8502D" stroke-width="2"/>
+          <path d="M60,32 L64,34 L60,36 Z" fill="#E8502D"/>
+          <!-- PO doc -->
+          <rect x="64" y="22" width="14" height="22" rx="1" fill="#FFD27A" stroke="#0A1A2E" stroke-width="1.5"/>
+          <line x1="66" y1="28" x2="76" y2="28" stroke="#0A1A2E" stroke-width="0.5"/>
+          <line x1="66" y1="32" x2="74" y2="32" stroke="#0A1A2E" stroke-width="0.5"/>
+          <text x="71" y="42" font-family="Space Grotesk" font-weight="800" font-size="4" fill="#0A1A2E" text-anchor="middle">PO</text>
+          <!-- approval check -->
+          <circle cx="40" cy="62" r="8" fill="#25D366" stroke="#0A1A2E" stroke-width="1.5"/>
+          <path d="M36,62 L39,65 L44,59" stroke="#0A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="strip-card__who">SUPPLIER → DECK → AP</p>
+      <p class="strip-card__desc">Supplier emails invoice with project number. DECK extracts data, creates PO, runs approval matrix (CFO → COO), records in Accounts Payable, slots into Aging.</p>
+      <div class="strip-card__chat">
+        <div class="mini-bubble mini-bubble--in mini-bubble--xs">
+          Vendor: <em>Al-Bahar Marine</em> · Project: <em>PRJ-2026-0118</em> · $84,500.<br/>
+          PO-04481 created. Routing to CFO &amp; COO. Estimated approval: <strong>4h</strong>.
+        </div>
+      </div>
+      <div class="strip-card__status">
+        <span class="badge-status badge-status--review">→ PENDING APPROVAL</span>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- closing line -->
+  <div class="cycle__close">
+    <span class="cycle__line"></span>
+    <span class="cycle__close-text">Six desks. Six personas. <em>One agent</em>. <em>One thread</em>. <em>Zero forms</em>.</span>
+    <span class="cycle__line"></span>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT IV.5 — TWELVE SERVICES, ONE INTERFACE                    ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="services">
+  <div class="services__head">
+    <div class="kicker kicker--teal">ONE THREAD. EVERY SERVICE.</div>
+    <h2>Twelve service lines.<br/><em>One WhatsApp conversation.</em></h2>
+    <p class="services__sub">DECK speaks the structured language of every IMPRESUB service line — automatically. The engineer just talks; the agent maps to the right doctype.</p>
+  </div>
+  <div class="services__grid">
+    <div class="svc"><div class="svc__icon">🤿</div><div class="svc__name">DIVING<br/>EXCELLENCE</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">🤖</div><div class="svc__name">ROV<br/>INTERVENTION</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">🏗️</div><div class="svc__name">SUBSEA<br/>CONSTRUCTION</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">📡</div><div class="svc__name">MARINE<br/>SURVEYS</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">🔍</div><div class="svc__name">NDT<br/>&amp; IMR</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">〜</div><div class="svc__name">PIPELINE<br/>TRENCHING</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">✓</div><div class="svc__name">ASSET<br/>INTEGRITY</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">⚓</div><div class="svc__name">SEARCH<br/>&amp; SALVAGE</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">🚢</div><div class="svc__name">VESSEL<br/>CHARTERING</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">📍</div><div class="svc__name">POSITIONING<br/>SERVICE</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">💧</div><div class="svc__name">DAMS<br/>&amp; LAGOONS</div><span class="svc__check">✓</span></div>
+    <div class="svc"><div class="svc__icon">📦</div><div class="svc__name">WAREHOUSE<br/>INVENTORY</div><span class="svc__check">✓</span></div>
+  </div>
+  <div class="services__footnote">
+    <span class="bullet"></span> Mapped to IMPRESUB's existing ERPNext doctypes ·
+    <span class="bullet"></span> Routed to the correct supervisor ·
+    <span class="bullet"></span> Audit-trailed by design
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT V — IMPACT                                               ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="impact">
+  <div class="impact__head">
+    <div class="kicker kicker--teal">FIFTY YEARS OF FIELD DATA</div>
+    <h3 class="impact__h">Built on what IMPRESUB already knows.</h3>
+  </div>
+  <div class="impact__row">
+    <div class="impact__cell">
+      <div class="impact__num"><span data-count="50">0</span><i>+ years</i></div>
+      <div class="impact__lbl">Offshore heritage</div>
+    </div>
+    <div class="impact__cell">
+      <div class="impact__num"><span data-count="250">0</span><i>K+ hrs</i></div>
+      <div class="impact__lbl">ROV operations logged</div>
+    </div>
+    <div class="impact__cell">
+      <div class="impact__num"><span data-count="3500">0</span><i>km²</i></div>
+      <div class="impact__lbl">Surveys completed</div>
+    </div>
+    <div class="impact__cell">
+      <div class="impact__num"><span data-count="1000">0</span><i>+ km</i></div>
+      <div class="impact__lbl">Pipeline trenched</div>
+    </div>
+  </div>
+  <div class="impact__bridge">
+    <span class="impact__bridge-line"></span>
+    <span class="impact__bridge-text">DECK is the layer that makes <em>this data</em> work for the next decade.</span>
+    <span class="impact__bridge-line"></span>
+  </div>
+  <div class="impact__row impact__row--deck">
+    <div class="impact__cell">
+      <div class="impact__num impact__num--orange"><span data-count="90">0</span><i>%</i></div>
+      <div class="impact__lbl">Reporting time eliminated</div>
+    </div>
+    <div class="impact__cell">
+      <div class="impact__num impact__num--orange"><span data-count="3">0</span>–<span data-count="5">0</span><i>%</i></div>
+      <div class="impact__lbl">Project margin recovered</div>
+    </div>
+    <div class="impact__cell">
+      <div class="impact__num impact__num--orange"><span data-count="0">0</span><i>apps</i></div>
+      <div class="impact__lbl">For engineers to learn</div>
+    </div>
+    <div class="impact__cell">
+      <div class="impact__num impact__num--orange"><span data-count="30">0</span><i>days</i></div>
+      <div class="impact__lbl">To pilot one vessel</div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  ACT VI — CLOSE                                               ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section id="close" class="close">
+  <div class="close__inner">
+    <div class="kicker">THE ASK</div>
+    <h2 class="close__h">
+      <span>IMPRESUB doesn't need a better app.</span>
+      <span class="close__h--accent">IMPRESUB needs no app at all.</span>
+    </h2>
+    <p class="close__p">
+      One vessel. Thirty days. Ten engineers. We measure the time saved, the errors prevented,
+      and the margin recovered. If the numbers don't move, we walk away. If they do — we go fleet-wide.
+    </p>
+    <div class="close__ctas">
+      <a class="btn btn--primary btn--lg" href="mailto:pilot@impresub.example?subject=DECK%20pilot%20-%20one%20vessel%2C%2030%20days">
+        Request the 30-day pilot →
+      </a>
+      <a class="btn btn--ghost btn--lg" href="#demo">Replay the demo</a>
+    </div>
+    <div class="close__trust">
+      <div class="trust__label">ENTERPRISE-GRADE BY DESIGN</div>
+      <div class="trust__badges">
+        <div class="badge"><span class="badge__icon">◆</span><span class="badge__text">ISO 9001<br/><i>Quality Management</i></span></div>
+        <div class="badge"><span class="badge__icon">◆</span><span class="badge__text">ISO 14001<br/><i>Environmental</i></span></div>
+        <div class="badge"><span class="badge__icon">◆</span><span class="badge__text">ISO 45001<br/><i>Occupational Health</i></span></div>
+        <div class="badge"><span class="badge__icon">◆</span><span class="badge__text">Audit-Ready<br/><i>End-to-end trail</i></span></div>
+        <div class="badge"><span class="badge__icon">◆</span><span class="badge__text">Self-hosted<br/><i>Your servers, your data</i></span></div>
+      </div>
+    </div>
+
+    <div class="close__sig">
+      <div>DECK</div>
+      <div class="close__by">by IMPRESUB</div>
+      <div class="close__motto">No apps. No forms. Just WhatsApp.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__left">
+    <div>© 2026 IMPRESUB · Concept prototype — not affiliated with WhatsApp / Meta or ERPNext / Frappe.</div>
+    <div>Built as a single-page interactive prototype · HTML · CSS · JS.</div>
+  </div>
+  <div class="foot__credit">
+    <span class="foot__credit-line"></span>
+    <div>
+      <div class="foot__credit-label">Created by</div>
+      <div class="foot__credit-name">Mohamed Zaghloul</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
