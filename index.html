@@ -703,8 +703,13 @@
           <svg class="ov-cairo__main" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMax meet">
             <defs>
               <linearGradient id="ovSuit" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%"  stop-color="#1F3148"/>
-                <stop offset="100%" stop-color="#0E1E2E"/>
+                <stop offset="0%"  stop-color="#C5CCD3"/>
+                <stop offset="55%" stop-color="#A4ADB6"/>
+                <stop offset="100%" stop-color="#7A8898"/>
+              </linearGradient>
+              <linearGradient id="ovSuitShade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%"  stop-color="#7A8898"/>
+                <stop offset="100%" stop-color="#A4ADB6"/>
               </linearGradient>
               <linearGradient id="ovDesk" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%"  stop-color="#5D3A24"/>
@@ -779,11 +784,15 @@
               <!-- torso (suit) -->
               <path d="M-62,-15 Q-62,-115 -32,-125 L32,-125 Q62,-115 62,-15 Z"
                     fill="url(#ovSuit)" stroke="#0A1A2E" stroke-width="2.5"/>
-              <!-- shirt collar -->
-              <path d="M-15,-125 L0,-95 L15,-125 L0,-118 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
-              <!-- tie -->
-              <path d="M-4,-114 L4,-114 L5,-95 L0,-87 L-5,-95 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1"/>
-              <path d="M-4,-87 L4,-87 L7,-30 L0,-22 L-7,-30 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="1"/>
+              <!-- white shirt panel (open collar — no tie) -->
+              <path d="M-22,-115 L-10,-95 L-10,-30 L10,-30 L10,-95 L22,-115 L20,-122 L-20,-122 Z"
+                    fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- collar V (wider, open) -->
+              <path d="M-22,-122 L-10,-95 L0,-92 L10,-95 L22,-122" fill="none" stroke="#0A1A2E" stroke-width="1.8"/>
+              <!-- shirt button hint -->
+              <circle cx="0" cy="-65" r="1.5" fill="#0A1A2E" opacity="0.5"/>
+              <!-- IMPRESUB lapel pin (small orange dot) -->
+              <circle cx="-30" cy="-95" r="3" fill="#E8502D" stroke="#0A1A2E" stroke-width="0.8"/>
               <!-- left arm resting on desk -->
               <path d="M-62,-100 Q-72,-75 -70,-38 Q-67,-12 -45,-10 L-30,-15 L-30,-65 Q-37,-82 -50,-98 Z"
                     fill="url(#ovSuit)" stroke="#0A1A2E" stroke-width="2"/>
@@ -813,33 +822,50 @@
                     fill="#FFCB8B" stroke="#0A1A2E" stroke-width="2"/>
               <ellipse cx="-30" cy="-172" rx="4" ry="8" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.2"/>
               <ellipse cx="30"  cy="-172" rx="4" ry="8" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1.2"/>
-              <!-- hair -->
-              <path d="M-28,-190 Q0,-216 28,-190 L28,-184 Q0,-194 -28,-184 Z"
-                    fill="#3A4658" stroke="#0A1A2E" stroke-width="1.5"/>
-              <path d="M-22,-196 Q-14,-201 -8,-196" stroke="#FAFAFA" stroke-width="1.4" fill="none" opacity="0.7"/>
-              <path d="M10,-196 Q18,-201 22,-196" stroke="#FAFAFA" stroke-width="1.4" fill="none" opacity="0.7"/>
-              <!-- eyebrows -->
-              <path d="M-17,-180 Q-11,-184 -5,-181" stroke="#3A2A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <path d="M5,-181 Q11,-184 17,-180" stroke="#3A2A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <!-- glasses -->
-              <circle cx="-11" cy="-172" r="7.5" fill="rgba(255,255,255,.15)" stroke="#0A1A2E" stroke-width="2"/>
-              <circle cx="11"  cy="-172" r="7.5" fill="rgba(255,255,255,.15)" stroke="#0A1A2E" stroke-width="2"/>
-              <line x1="-3.5" y1="-172" x2="3.5" y2="-172" stroke="#0A1A2E" stroke-width="2"/>
-              <line x1="-19" y1="-174" x2="-26" y2="-172" stroke="#0A1A2E" stroke-width="2"/>
-              <line x1="19"  y1="-174" x2="26"  y2="-172" stroke="#0A1A2E" stroke-width="2"/>
-              <!-- eyes (looking at the phone, slightly down) -->
-              <circle cx="-11" cy="-170" r="2.2" fill="#1A4D6E"/>
-              <circle cx="11"  cy="-170" r="2.2" fill="#1A4D6E"/>
-              <circle cx="-10" cy="-170.5" r="0.7" fill="#FFFFFF"/>
-              <circle cx="12"  cy="-170.5" r="0.7" fill="#FFFFFF"/>
-              <!-- nose -->
-              <path d="M-2,-166 Q-3,-158 -1,-152 L1,-152 Q3,-158 2,-166 Z" fill="#E5B47A" opacity="0.7"/>
-              <!-- mouth (slight content smile) -->
-              <path d="M-8,-145 Q-3,-141 0,-141 Q3,-141 8,-145" stroke="#0A1A2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-              <ellipse cx="0" cy="-141" rx="16" ry="5" fill="#3A2A1A" opacity="0.1"/>
-              <!-- cheek warmth -->
-              <ellipse cx="-15" cy="-158" rx="6" ry="3" fill="#E8502D" opacity="0.18"/>
-              <ellipse cx="15"  cy="-158" rx="6" ry="3" fill="#E8502D" opacity="0.18"/>
+              <!-- hair (salt-and-pepper, dark on top, silver on sides) -->
+              <path d="M-28,-190 Q0,-218 28,-190 L29,-180 Q22,-188 14,-186 Q0,-188 -14,-186 Q-22,-188 -29,-180 Z"
+                    fill="#2A2620" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- silver temples -->
+              <path d="M-29,-184 Q-26,-192 -22,-194 Q-18,-188 -22,-180 Z" fill="#9AA0A6" opacity="0.85"/>
+              <path d="M29,-184 Q26,-192 22,-194 Q18,-188 22,-180 Z" fill="#9AA0A6" opacity="0.85"/>
+              <!-- silver streaks throughout -->
+              <path d="M-18,-200 Q-12,-206 -6,-202" stroke="#C5CCD3" stroke-width="1.6" fill="none" opacity="0.85"/>
+              <path d="M6,-202 Q12,-206 18,-200" stroke="#C5CCD3" stroke-width="1.6" fill="none" opacity="0.85"/>
+              <path d="M-10,-208 Q-3,-212 4,-208" stroke="#C5CCD3" stroke-width="1.4" fill="none" opacity="0.7"/>
+              <path d="M-22,-194 L-18,-188" stroke="#FAFAFA" stroke-width="1" opacity="0.6"/>
+              <path d="M22,-194 L18,-188" stroke="#FAFAFA" stroke-width="1" opacity="0.6"/>
+              <!-- thick expressive eyebrows (his signature look) -->
+              <path d="M-18,-178 Q-11,-184 -3,-179" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M3,-179 Q11,-184 18,-178" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <!-- eyes (open, expressive — talking with passion) -->
+              <ellipse cx="-10" cy="-170" rx="3" ry="3.5" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="1.2"/>
+              <ellipse cx="10"  cy="-170" rx="3" ry="3.5" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="1.2"/>
+              <ellipse cx="-10" cy="-169" rx="2" ry="2.5" fill="#3A2A1A"/>
+              <ellipse cx="10"  cy="-169" rx="2" ry="2.5" fill="#3A2A1A"/>
+              <circle cx="-10" cy="-170" r="1" fill="#0A0A0A"/>
+              <circle cx="10"  cy="-170" r="1" fill="#0A0A0A"/>
+              <circle cx="-9.2" cy="-170.6" r="0.6" fill="#FFFFFF"/>
+              <circle cx="10.8" cy="-170.6" r="0.6" fill="#FFFFFF"/>
+              <!-- nose (more defined, mediterranean) -->
+              <path d="M-2,-164 Q-4,-156 -3,-148 L3,-148 Q4,-156 2,-164 Z"
+                    fill="#E5B47A" opacity="0.85" stroke="#0A1A2E" stroke-width="0.5"/>
+              <!-- mouth (slightly open, mid-sentence) -->
+              <ellipse cx="0" cy="-140" rx="5" ry="2.5" fill="#3A1818" stroke="#0A1A2E" stroke-width="1.2"/>
+              <path d="M-5,-141 Q0,-143 5,-141" stroke="#0A1A2E" stroke-width="0.8" fill="none"/>
+              <!-- BEARD — fuller, salt-and-pepper, like the photo -->
+              <!-- beard mass along jaw -->
+              <path d="M-22,-150 Q-24,-138 -18,-128 Q-12,-122 0,-120 Q12,-122 18,-128 Q24,-138 22,-150
+                       Q18,-145 14,-144 Q7,-143 0,-144 Q-7,-143 -14,-144 Q-18,-145 -22,-150 Z"
+                    fill="#2A1F18" opacity="0.85"/>
+              <!-- moustache -->
+              <path d="M-9,-148 Q-5,-150 0,-148 Q5,-150 9,-148 Q5,-145 0,-145 Q-5,-145 -9,-148 Z"
+                    fill="#2A1F18" opacity="0.9"/>
+              <!-- gray streaks in beard -->
+              <path d="M-16,-138 Q-13,-132 -8,-128" stroke="#9AA0A6" stroke-width="0.8" fill="none" opacity="0.6"/>
+              <path d="M14,-138 Q11,-132 6,-128" stroke="#9AA0A6" stroke-width="0.8" fill="none" opacity="0.6"/>
+              <!-- cheek shadow -->
+              <ellipse cx="-15" cy="-156" rx="5" ry="3" fill="#C99A6E" opacity="0.3"/>
+              <ellipse cx="15"  cy="-156" rx="5" ry="3" fill="#C99A6E" opacity="0.3"/>
 
               <!-- Floating name tag -->
               <g class="ov-ceo-tag">
@@ -1586,8 +1612,9 @@
         <svg class="office__desk-scene" viewBox="0 0 800 600" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
           <defs>
             <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%"  stop-color="#1F3148"/>
-              <stop offset="100%" stop-color="#0E1E2E"/>
+              <stop offset="0%"  stop-color="#C5CCD3"/>
+              <stop offset="55%" stop-color="#A4ADB6"/>
+              <stop offset="100%" stop-color="#7A8898"/>
             </linearGradient>
             <linearGradient id="deskWood" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%"  stop-color="#5D3A24"/>
@@ -1680,11 +1707,15 @@
             <!-- TORSO (suit) -->
             <path d="M-50,-10 Q-50,-90 -25,-100 L25,-100 Q50,-90 50,-10 Z"
                   fill="url(#suit)" stroke="#0A1A2E" stroke-width="2"/>
-            <!-- SHIRT collar V -->
-            <path d="M-12,-100 L0,-78 L12,-100 L0,-95 Z" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.2"/>
-            <!-- TIE (orange — IMPRESUB color) -->
-            <path d="M-3,-90 L3,-90 L4,-78 L0,-72 L-4,-78 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="0.8"/>
-            <path d="M-3,-72 L3,-72 L5,-30 L0,-25 L-5,-30 Z" fill="#E8502D" stroke="#0A1A2E" stroke-width="0.8"/>
+            <!-- white shirt panel (open collar — no tie) -->
+            <path d="M-18,-92 L-8,-78 L-8,-30 L8,-30 L8,-78 L18,-92 L16,-98 L-16,-98 Z"
+                  fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.2"/>
+            <!-- collar V (wider, open) -->
+            <path d="M-18,-98 L-8,-78 L0,-76 L8,-78 L18,-98" fill="none" stroke="#0A1A2E" stroke-width="1.4"/>
+            <!-- shirt button -->
+            <circle cx="0" cy="-55" r="1.2" fill="#0A1A2E" opacity="0.5"/>
+            <!-- IMPRESUB lapel pin -->
+            <circle cx="-25" cy="-78" r="2.5" fill="#E8502D" stroke="#0A1A2E" stroke-width="0.6"/>
 
             <!-- LEFT ARM (resting on desk, hand near phone) -->
             <path d="M-50,-80 Q-58,-60 -56,-30 Q-54,-10 -38,-8 L-25,-12 L-25,-50 Q-30,-65 -40,-78 Z"
@@ -1722,32 +1753,42 @@
             <!-- ears -->
             <ellipse cx="-24" cy="-138" rx="3" ry="6" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1"/>
             <ellipse cx="24"  cy="-138" rx="3" ry="6" fill="#E5B47A" stroke="#0A1A2E" stroke-width="1"/>
-            <!-- salt-and-pepper hair (silver fox CEO) -->
-            <path d="M-22,-152 Q0,-172 22,-152 L22,-148 Q0,-156 -22,-148 Z"
-                  fill="#3A4658" stroke="#0A1A2E" stroke-width="1.2"/>
-            <path d="M-18,-156 Q-12,-160 -8,-156" stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.7"/>
-            <path d="M10,-156 Q14,-160 18,-156" stroke="#FAFAFA" stroke-width="1" fill="none" opacity="0.7"/>
-            <!-- eyebrows -->
-            <path d="M-14,-145 Q-9,-148 -4,-146" stroke="#3A2A1A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-            <path d="M4,-146 Q9,-148 14,-145" stroke="#3A2A1A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-            <!-- GLASSES -->
-            <circle cx="-9" cy="-138" r="6" fill="none" stroke="#0A1A2E" stroke-width="1.5"/>
-            <circle cx="9"  cy="-138" r="6" fill="none" stroke="#0A1A2E" stroke-width="1.5"/>
-            <line x1="-3" y1="-138" x2="3" y2="-138" stroke="#0A1A2E" stroke-width="1.5"/>
-            <line x1="-15" y1="-140" x2="-22" y2="-138" stroke="#0A1A2E" stroke-width="1.5"/>
-            <line x1="15"  y1="-140" x2="22"  y2="-138" stroke="#0A1A2E" stroke-width="1.5"/>
-            <!-- eyes (behind glasses) -->
-            <circle cx="-9" cy="-138" r="1.8" fill="#1A4D6E"/>
-            <circle cx="9"  cy="-138" r="1.8" fill="#1A4D6E"/>
-            <circle cx="-8.3" cy="-138.5" r="0.5" fill="#FFFFFF"/>
-            <circle cx="9.7"  cy="-138.5" r="0.5" fill="#FFFFFF"/>
-            <!-- nose -->
-            <path d="M-2,-134 Q-3,-128 -1,-124 L1,-124 Q3,-128 2,-134 Z"
-                  fill="#E5B47A" opacity="0.7"/>
-            <!-- mouth (slight thoughtful smile) -->
-            <path d="M-7,-118 Q-3,-115 0,-115 Q3,-115 7,-118" stroke="#0A1A2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <!-- stubble (well-groomed) -->
-            <ellipse cx="0" cy="-114" rx="14" ry="4" fill="#3A2A1A" opacity="0.1"/>
+            <!-- hair (salt-and-pepper, dark on top, silver on sides) -->
+            <path d="M-22,-152 Q0,-174 22,-152 L23,-145 Q17,-150 11,-149 Q0,-150 -11,-149 Q-17,-150 -23,-145 Z"
+                  fill="#2A2620" stroke="#0A1A2E" stroke-width="1.2"/>
+            <!-- silver temples -->
+            <path d="M-23,-148 Q-21,-154 -17,-156 Q-14,-150 -17,-145 Z" fill="#9AA0A6" opacity="0.85"/>
+            <path d="M23,-148 Q21,-154 17,-156 Q14,-150 17,-145 Z" fill="#9AA0A6" opacity="0.85"/>
+            <!-- silver streaks -->
+            <path d="M-14,-160 Q-10,-164 -6,-162" stroke="#C5CCD3" stroke-width="1.4" fill="none" opacity="0.85"/>
+            <path d="M6,-162 Q10,-164 14,-160" stroke="#C5CCD3" stroke-width="1.4" fill="none" opacity="0.85"/>
+            <!-- thick expressive eyebrows -->
+            <path d="M-14,-144 Q-9,-148 -3,-145" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+            <path d="M3,-145 Q9,-148 14,-144" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+            <!-- eyes (open, expressive) -->
+            <ellipse cx="-9" cy="-138" rx="2.6" ry="3" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="1"/>
+            <ellipse cx="9"  cy="-138" rx="2.6" ry="3" fill="#FFFFFF" stroke="#0A1A2E" stroke-width="1"/>
+            <ellipse cx="-9" cy="-137.5" rx="1.7" ry="2.1" fill="#3A2A1A"/>
+            <ellipse cx="9"  cy="-137.5" rx="1.7" ry="2.1" fill="#3A2A1A"/>
+            <circle cx="-9" cy="-137" r="0.8" fill="#0A0A0A"/>
+            <circle cx="9"  cy="-137" r="0.8" fill="#0A0A0A"/>
+            <circle cx="-8.4" cy="-138.5" r="0.5" fill="#FFFFFF"/>
+            <circle cx="9.6"  cy="-138.5" r="0.5" fill="#FFFFFF"/>
+            <!-- nose (defined, mediterranean) -->
+            <path d="M-2,-133 Q-3,-126 -2,-121 L2,-121 Q3,-126 2,-133 Z"
+                  fill="#E5B47A" stroke="#0A1A2E" stroke-width="0.5" opacity="0.85"/>
+            <!-- mouth (slightly open, mid-sentence) -->
+            <ellipse cx="0" cy="-115" rx="4" ry="2" fill="#3A1818" stroke="#0A1A2E" stroke-width="1"/>
+            <!-- BEARD — fuller, salt-and-pepper -->
+            <path d="M-19,-122 Q-21,-112 -16,-104 Q-10,-100 0,-99 Q10,-100 16,-104 Q21,-112 19,-122
+                     Q15,-118 12,-117 Q6,-116 0,-117 Q-6,-116 -12,-117 Q-15,-118 -19,-122 Z"
+                  fill="#2A1F18" opacity="0.85"/>
+            <!-- moustache -->
+            <path d="M-7,-120 Q-4,-122 0,-120 Q4,-122 7,-120 Q4,-118 0,-118 Q-4,-118 -7,-120 Z"
+                  fill="#2A1F18" opacity="0.9"/>
+            <!-- gray streaks in beard -->
+            <path d="M-13,-113 Q-10,-108 -6,-105" stroke="#9AA0A6" stroke-width="0.7" fill="none" opacity="0.6"/>
+            <path d="M11,-113 Q8,-108 4,-105" stroke="#9AA0A6" stroke-width="0.7" fill="none" opacity="0.6"/>
 
             <!-- NAME tag floating above -->
             <g class="ceo-tag">
