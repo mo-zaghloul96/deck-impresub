@@ -1657,6 +1657,193 @@ body.no-scroll { overflow: hidden; }
 }
 .uw-pipeline { transform-origin: center; }
 
+/* ─── OV — ROV INTERVENTION (deep water) ──────────── */
+.ov__bg--rov {
+  background:
+    radial-gradient(ellipse at 42% 35%, rgba(255,210,122,.12), transparent 45%),
+    linear-gradient(180deg,
+      #051a30 0%,
+      #03152a 25%,
+      #020e1f 55%,
+      #010815 80%,
+      #000408 100%);
+  position: absolute; inset: 0;
+}
+.ov-rov__scene {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+}
+.rov-rays {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255,210,122,.06) 0%, transparent 30%),
+    radial-gradient(ellipse 600px 300px at 42% 50%, rgba(255,210,122,.08), transparent 70%);
+  pointer-events: none;
+}
+.rov-particle {
+  position: absolute;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.6);
+  pointer-events: none;
+  animation: particleFloat 8s linear infinite;
+  box-shadow: 0 0 4px rgba(255,255,255,.4);
+}
+.rov-p--1 { left: 25%; top: 80%; animation-delay: 0s;   animation-duration: 9s; }
+.rov-p--2 { left: 65%; top: 90%; animation-delay: 2s;   animation-duration: 11s; }
+.rov-p--3 { left: 78%; top: 75%; animation-delay: 4.5s; animation-duration: 10s; }
+.rov-p--4 { left: 35%; top: 95%; animation-delay: 6s;   animation-duration: 8s; }
+@keyframes particleFloat {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  10%  { opacity: 1; }
+  100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+}
+.rov-vehicle {
+  transform-origin: center;
+  animation: rovHover 5s ease-in-out infinite alternate;
+}
+@keyframes rovHover {
+  0%   { transform: translate(0, 0) rotate(-1deg); }
+  100% { transform: translate(8px, -6px) rotate(1deg); }
+}
+.rov-prop { animation: propSpin .25s linear infinite; }
+@keyframes propSpin {
+  from { transform: rotate(0); }
+  to   { transform: rotate(360deg); }
+}
+.rov-spotlight {
+  animation: spotPulse 3s ease-in-out infinite alternate;
+  transform-origin: 510px 330px;
+}
+@keyframes spotPulse {
+  from { opacity: .65; }
+  to   { opacity: 1; }
+}
+.rov-arm {
+  transform-origin: 500px 370px;
+  animation: armWork 4s ease-in-out infinite alternate;
+}
+@keyframes armWork {
+  0%   { transform: rotate(0); }
+  100% { transform: rotate(-6deg); }
+}
+
+.rov-hud {
+  position: absolute;
+  top: 24px; left: 24px;
+  z-index: 20;
+  background: rgba(5,20,40,.85);
+  border: 1px solid rgba(255,210,122,.35);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-family: var(--font-mono); font-size: 11px;
+  display: flex; flex-direction: column; gap: 6px;
+  color: #FFD27A;
+  letter-spacing: .12em;
+  min-width: 200px;
+}
+.rov-hud__title {
+  color: #FFFFFF; font-weight: 700;
+  letter-spacing: .2em; font-size: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,210,122,.25);
+  margin-bottom: 4px;
+}
+.rov-hud__row { display: flex; justify-content: space-between; gap: 18px; }
+.rov-hud__row span { opacity: .55; }
+.rov-hud__row b { color: #FFE6B3; font-weight: 600; }
+.rov-hud__rec {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(232,80,45,.25);
+  font-size: 10px;
+  color: #E8502D;
+  letter-spacing: .15em;
+}
+.rov-hud__rec::before { content: ""; }
+
+/* ─── OV — SUBSEA CONSTRUCTION ───────────────────── */
+.ov__bg--build {
+  background:
+    radial-gradient(ellipse at center, rgba(125,211,252,.08), transparent 55%),
+    linear-gradient(180deg,
+      #1B4A6E 0%,
+      #0E3A5C 30%,
+      #082640 60%,
+      #051428 100%);
+  position: absolute; inset: 0;
+}
+.ov-build__scene {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+}
+.build-manifold {
+  transform-origin: 640px 0;
+  animation: manifoldDrop 6s ease-in-out infinite alternate;
+}
+@keyframes manifoldDrop {
+  from { transform: translateY(0) rotate(-.3deg); }
+  to   { transform: translateY(8px) rotate(.3deg); }
+}
+.build-diver { transform-origin: center; }
+.build-diver--1 { animation: diverWork1 3s ease-in-out infinite alternate; }
+.build-diver--2 { animation: diverWork2 4s ease-in-out infinite alternate; }
+@keyframes diverWork1 {
+  from { transform: translate(420px, 480px) scale(0.8) rotate(-1deg); }
+  to   { transform: translate(425px, 478px) scale(0.8) rotate(1deg); }
+}
+@keyframes diverWork2 {
+  from { transform: translate(810px, 490px) scale(0.75); }
+  to   { transform: translate(815px, 485px) scale(0.75); }
+}
+.build-rov {
+  transform-origin: center;
+  animation: rovHover 4s ease-in-out infinite alternate;
+}
+
+.build-hud {
+  position: absolute;
+  top: 24px; right: 24px;
+  z-index: 20;
+  background: rgba(10,40,72,.85);
+  border: 1px solid rgba(125,211,252,.3);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-family: var(--font-mono); font-size: 11px;
+  display: flex; flex-direction: column; gap: 6px;
+  color: #7DD3FC;
+  letter-spacing: .12em;
+  min-width: 240px;
+}
+.build-hud__title {
+  color: #FFFFFF; font-weight: 700;
+  letter-spacing: .2em; font-size: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(125,211,252,.25);
+}
+.build-hud__op {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 10.5px;
+  color: #FAFAFA;
+  letter-spacing: .08em;
+}
+.build-hud__op .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  flex-shrink: 0;
+}
+.dot--green  { background: var(--pulse); box-shadow: 0 0 6px var(--pulse); animation: blink 1.6s ease-in-out infinite; }
+.dot--orange { background: var(--signal); box-shadow: 0 0 6px var(--signal); animation: blink 1.4s ease-in-out infinite; }
+.dot--blue   { background: #7DD3FC; box-shadow: 0 0 6px #7DD3FC; animation: blink 1.8s ease-in-out infinite; }
+.build-hud__rec {
+  margin-top: 6px; padding-top: 8px;
+  border-top: 1px solid rgba(232,80,45,.25);
+  font-size: 10px;
+  color: #E8502D;
+  letter-spacing: .15em;
+}
+
 /* underwater HUD */
 .uw-hud {
   position: absolute;

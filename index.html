@@ -1188,6 +1188,280 @@
           </div>
         </div>
       </div>
+      <!-- ─── OVERLAY 4B: ROV INTERVENTION (deep water) ──────── -->
+      <div class="ov ov--rov" id="ov-rov" aria-hidden="true">
+        <div class="ov__bg ov__bg--rov">
+          <div class="rov-rays"></div>
+          <!-- a few deep-water particles -->
+          <div class="rov-particle rov-p--1"></div>
+          <div class="rov-particle rov-p--2"></div>
+          <div class="rov-particle rov-p--3"></div>
+          <div class="rov-particle rov-p--4"></div>
+
+          <svg class="ov-rov__scene" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="rovBody" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#FFD600"/>
+                <stop offset="100%" stop-color="#C99A00"/>
+              </linearGradient>
+              <radialGradient id="rovLight" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0%"  stop-color="#FFFFFF" stop-opacity="0.85"/>
+                <stop offset="40%" stop-color="#FFD27A" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#FFD27A" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="rovBeam" cx="0.5" cy="0" r="1.0">
+                <stop offset="0%"  stop-color="#FFE6B3" stop-opacity="0.55"/>
+                <stop offset="60%" stop-color="#FFD27A" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#FFD27A" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- seabed -->
+            <path d="M0,560 Q300,540 600,560 Q900,580 1200,555 L1200,700 L0,700 Z"
+                  fill="#0A1A2E"/>
+            <ellipse cx="600" cy="565" rx="900" ry="14" fill="#1B4A6E" opacity="0.5"/>
+
+            <!-- light beam from ROV onto the wellhead -->
+            <path class="rov-spotlight" d="M520,330 L820,560 L320,560 Z" fill="url(#rovBeam)"/>
+
+            <!-- WELLHEAD / CHRISTMAS TREE on seabed -->
+            <g class="rov-wellhead">
+              <!-- base -->
+              <rect x="540" y="510" width="120" height="50" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="525" y="540" width="150" height="20" fill="#5D5552" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- vertical stack -->
+              <rect x="585" y="430" width="30" height="80" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- horizontal valves -->
+              <circle cx="565" cy="450" r="14" fill="#E8502D" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="565" cy="450" r="6" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
+              <line x1="557" y1="450" x2="573" y2="450" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="565" y1="442" x2="565" y2="458" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="635" cy="450" r="14" fill="#FFD600" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="635" cy="450" r="6" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
+              <line x1="627" y1="450" x2="643" y2="450" stroke="#0A1A2E" stroke-width="2"/>
+              <line x1="635" y1="442" x2="635" y2="458" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- crown -->
+              <rect x="575" y="420" width="50" height="14" rx="2" fill="#5D5552" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="595" y="408" width="10" height="14" fill="#5D5552" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- pipes going off to sides (subsea network) -->
+              <rect x="450" y="535" width="100" height="14" rx="2" fill="#5D5552" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="650" y="535" width="100" height="14" rx="2" fill="#5D5552" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- IMPRESUB tag -->
+              <text x="600" y="495" font-family="Space Grotesk" font-weight="800" font-size="8" letter-spacing="2"
+                    fill="#FFD27A" text-anchor="middle">XT-WELL · A-12</text>
+            </g>
+
+            <!-- subsea pipeline going off to right -->
+            <path d="M680,549 Q900,540 1200,545" stroke="#3A4A5C" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <path d="M680,549 Q900,540 1200,545" stroke="#5D5552" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+            <!-- ROV TETHER going up off-screen -->
+            <path d="M495,290 Q505,200 480,80 Q470,0 460,-50" stroke="#FFD600" stroke-width="3" fill="none" opacity="0.9"/>
+            <path d="M495,290 Q505,200 480,80 Q470,0 460,-50" stroke="#0A1A2E" stroke-width="1" fill="none" opacity="0.4"/>
+
+            <!-- THE ROV -->
+            <g class="rov-vehicle">
+              <!-- main body / frame -->
+              <rect x="430" y="280" width="160" height="90" rx="8" fill="url(#rovBody)" stroke="#0A1A2E" stroke-width="2.5"/>
+              <!-- frame bars -->
+              <rect x="430" y="280" width="160" height="6" fill="#0A1A2E"/>
+              <rect x="430" y="364" width="160" height="6" fill="#0A1A2E"/>
+              <rect x="430" y="280" width="6" height="90" fill="#0A1A2E"/>
+              <rect x="584" y="280" width="6" height="90" fill="#0A1A2E"/>
+              <!-- center electronics box -->
+              <rect x="470" y="305" width="80" height="40" rx="4" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+              <text x="510" y="330" font-family="Space Grotesk" font-weight="800" font-size="9" letter-spacing="1.5"
+                    fill="#FFD600" text-anchor="middle">IMPRESUB</text>
+              <!-- thrusters (front) -->
+              <circle cx="448" cy="320" r="14" fill="#1A2B47" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="448" cy="320" r="9" fill="#3A4A5C"/>
+              <g class="rov-prop" transform-origin="448 320">
+                <line x1="438" y1="320" x2="458" y2="320" stroke="#FAFAFA" stroke-width="1.5"/>
+                <line x1="448" y1="310" x2="448" y2="330" stroke="#FAFAFA" stroke-width="1.5"/>
+              </g>
+              <circle cx="572" cy="320" r="14" fill="#1A2B47" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="572" cy="320" r="9" fill="#3A4A5C"/>
+              <g class="rov-prop" transform-origin="572 320">
+                <line x1="562" y1="320" x2="582" y2="320" stroke="#FAFAFA" stroke-width="1.5"/>
+                <line x1="572" y1="310" x2="572" y2="330" stroke="#FAFAFA" stroke-width="1.5"/>
+              </g>
+              <!-- floodlights (front, two big) -->
+              <circle cx="425" cy="325" r="10" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="425" cy="325" r="6" fill="#FFE6B3"/>
+              <circle cx="595" cy="325" r="10" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="595" cy="325" r="6" fill="#FFE6B3"/>
+              <!-- cameras between -->
+              <circle cx="510" cy="365" r="6" fill="#1B4A6E" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="510" cy="365" r="2.5" fill="#FAFAFA"/>
+              <!-- MANIPULATOR ARM (hydraulic, extending toward valve) -->
+              <g class="rov-arm">
+                <line x1="500" y1="370" x2="540" y2="430" stroke="#FFD600" stroke-width="6" stroke-linecap="round"/>
+                <line x1="500" y1="370" x2="540" y2="430" stroke="#0A1A2E" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                <circle cx="540" cy="430" r="5" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+                <line x1="540" y1="430" x2="565" y2="450" stroke="#FFD600" stroke-width="5" stroke-linecap="round"/>
+                <!-- gripper -->
+                <path d="M558,452 L568,447 L572,453 L562,458 Z" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+              </g>
+              <!-- tether attachment on top -->
+              <rect x="490" y="270" width="20" height="14" rx="2" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- nav lights -->
+              <circle cx="430" cy="340" r="2.5" fill="#E8502D">
+                <animate attributeName="opacity" values="1;.2;1" dur="0.9s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="590" cy="340" r="2.5" fill="#25D366">
+                <animate attributeName="opacity" values=".2;1;.2" dur="0.9s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+
+          <!-- ROV HUD -->
+          <div class="rov-hud">
+            <div class="rov-hud__title">ROV-A · LIVE FEED</div>
+            <div class="rov-hud__row"><span>DEPTH</span><b>−180 m</b></div>
+            <div class="rov-hud__row"><span>HDG</span><b>312°</b></div>
+            <div class="rov-hud__row"><span>SPEED</span><b>0.4 kn</b></div>
+            <div class="rov-hud__row"><span>MISSION</span><b>ROV-2026-0247</b></div>
+            <div class="rov-hud__row"><span>ASSET</span><b>XT-WELL A-12</b></div>
+            <div class="rov-hud__rec">● REC · 14:22</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── OVERLAY 4C: SUBSEA CONSTRUCTION (manifold install) ──────── -->
+      <div class="ov ov--build" id="ov-build" aria-hidden="true">
+        <div class="ov__bg ov__bg--build">
+          <div class="rov-rays"></div>
+          <div class="uw-bubble uw-bubble--1" style="left:18%"></div>
+          <div class="uw-bubble uw-bubble--3" style="left:62%"></div>
+
+          <svg class="ov-build__scene" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="manifoldBox" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#FFD600"/>
+                <stop offset="100%" stop-color="#C99400"/>
+              </linearGradient>
+              <linearGradient id="diveBlack" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#1F3148"/>
+                <stop offset="100%" stop-color="#0A1A2E"/>
+              </linearGradient>
+            </defs>
+
+            <!-- seabed -->
+            <path d="M0,580 Q300,560 600,580 Q900,600 1200,575 L1200,700 L0,700 Z"
+                  fill="#0A1A2E"/>
+            <ellipse cx="600" cy="585" rx="900" ry="12" fill="#1B4A6E" opacity="0.5"/>
+
+            <!-- existing seabed pipeline -->
+            <path d="M0,580 Q200,572 400,578 L800,578 Q1000,572 1200,580"
+                  stroke="#3A4A5C" stroke-width="22" fill="none" stroke-linecap="round"/>
+            <path d="M0,580 Q200,572 400,578 L800,578 Q1000,572 1200,580"
+                  stroke="#5D5552" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <!-- concrete mattresses -->
+            <rect x="100" y="565" width="80" height="20" rx="2" fill="#7A8898" stroke="#0A1A2E" stroke-width="1.5"/>
+            <line x1="100" y1="572" x2="180" y2="572" stroke="#0A1A2E" stroke-width="0.5" opacity="0.4"/>
+            <line x1="100" y1="578" x2="180" y2="578" stroke="#0A1A2E" stroke-width="0.5" opacity="0.4"/>
+
+            <!-- LIFT ROPE from surface to manifold -->
+            <line x1="600" y1="-30" x2="640" y2="380" stroke="#FAFAFA" stroke-width="3" opacity="0.85"/>
+            <line x1="600" y1="-30" x2="640" y2="380" stroke="#0A1A2E" stroke-width="1" opacity="0.4"/>
+
+            <!-- THE MANIFOLD (being lowered) -->
+            <g class="build-manifold">
+              <!-- big yellow frame -->
+              <rect x="540" y="380" width="200" height="120" rx="6" fill="url(#manifoldBox)" stroke="#0A1A2E" stroke-width="3"/>
+              <!-- internal piping -->
+              <rect x="555" y="395" width="170" height="10" fill="#5D5552" stroke="#0A1A2E" stroke-width="1.5"/>
+              <rect x="555" y="475" width="170" height="10" fill="#5D5552" stroke="#0A1A2E" stroke-width="1.5"/>
+              <line x1="580" y1="405" x2="580" y2="475" stroke="#5D5552" stroke-width="6"/>
+              <line x1="640" y1="405" x2="640" y2="475" stroke="#5D5552" stroke-width="6"/>
+              <line x1="700" y1="405" x2="700" y2="475" stroke="#5D5552" stroke-width="6"/>
+              <!-- valve handles -->
+              <circle cx="580" cy="440" r="10" fill="#E8502D" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="580" cy="440" r="4" fill="#FAFAFA"/>
+              <circle cx="640" cy="440" r="10" fill="#E8502D" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="640" cy="440" r="4" fill="#FAFAFA"/>
+              <circle cx="700" cy="440" r="10" fill="#E8502D" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="700" cy="440" r="4" fill="#FAFAFA"/>
+              <!-- IMPRESUB label -->
+              <text x="640" y="510" font-family="Space Grotesk" font-weight="800" font-size="11" letter-spacing="2.5"
+                    fill="#0A1A2E" text-anchor="middle">SUBSEA MANIFOLD · M-04</text>
+              <!-- lifting padeye -->
+              <rect x="630" y="370" width="20" height="14" rx="2" fill="#3A4A5C" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="640" cy="377" r="3" fill="none" stroke="#FAFAFA" stroke-width="1.5"/>
+            </g>
+
+            <!-- DIVER 1 (left, working with wrench on flange) -->
+            <g class="build-diver build-diver--1" transform="translate(420 480) scale(0.8)">
+              <ellipse cx="-20" cy="105" rx="18" ry="7" fill="#0A0A0A" transform="rotate(-15 -20 105)"/>
+              <ellipse cx="20" cy="105" rx="18" ry="7" fill="#0A0A0A" transform="rotate(15 20 105)"/>
+              <path d="M-12,40 Q-15,80 -16,100 L-8,102 L-6,42 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M12,40 Q15,80 16,100 L8,102 L6,42 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M-26,-20 Q-26,-25 -19,-25 L19,-25 Q26,-25 26,-20 L29,40 L-29,40 Z"
+                    fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="-29" y="20" width="58" height="5" fill="#1A2B47"/>
+              <rect x="-36" y="-10" width="10" height="40" rx="5" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+              <rect x="26" y="-10" width="10" height="40" rx="5" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- both arms forward (working) -->
+              <path d="M-26,-15 Q-10,-5 10,5 L8,15 L-8,5 L-26,-5 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M26,-15 Q10,-5 -10,5 L-8,15 L8,5 L26,-5 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <!-- hands on a wrench -->
+              <rect x="-4" y="3" width="40" height="8" rx="1.5" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5" transform="rotate(15 16 7)"/>
+              <!-- helmet -->
+              <circle cx="0" cy="-45" r="32" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2.5"/>
+              <circle cx="0" cy="-47" r="22" fill="rgba(125,211,252,.3)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="0" cy="-47" r="16" fill="#FFCB8B" opacity="0.6"/>
+              <ellipse cx="-6" cy="-54" rx="5" ry="2.5" fill="#FFFFFF" opacity="0.4" transform="rotate(-30 -6 -54)"/>
+              <circle cx="-26" cy="-45" r="3" fill="#FFD600" stroke="#0A1A2E" stroke-width="1"/>
+              <circle cx="26" cy="-45" r="3" fill="#FFD600" stroke="#0A1A2E" stroke-width="1"/>
+            </g>
+
+            <!-- DIVER 2 (right, signaling to ROV) -->
+            <g class="build-diver build-diver--2" transform="translate(810 490) scale(0.75)">
+              <ellipse cx="-20" cy="105" rx="18" ry="7" fill="#0A0A0A" transform="rotate(-20 -20 105)"/>
+              <ellipse cx="20" cy="105" rx="18" ry="7" fill="#0A0A0A" transform="rotate(20 20 105)"/>
+              <path d="M-12,40 Q-15,80 -16,100 L-8,102 L-6,42 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M12,40 Q15,80 16,100 L8,102 L6,42 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <path d="M-26,-20 Q-26,-25 -19,-25 L19,-25 Q26,-25 26,-20 L29,40 L-29,40 Z"
+                    fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="-29" y="20" width="58" height="5" fill="#1A2B47"/>
+              <rect x="-36" y="-10" width="10" height="40" rx="5" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+              <rect x="26" y="-10" width="10" height="40" rx="5" fill="#FFD600" stroke="#0A1A2E" stroke-width="1.5"/>
+              <!-- one arm raised pointing -->
+              <path d="M-26,-15 Q-40,-30 -50,-50 L-44,-58 L-30,-40 L-22,-22 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="-50" cy="-50" r="6" fill="#FFCB8B" stroke="#0A1A2E" stroke-width="1.5"/>
+              <path d="M26,-15 Q32,5 22,18 L14,12 L20,0 L22,-15 Z" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="0" cy="-45" r="30" fill="url(#diveBlack)" stroke="#0A1A2E" stroke-width="2.5"/>
+              <circle cx="0" cy="-47" r="20" fill="rgba(125,211,252,.3)" stroke="#0A1A2E" stroke-width="2"/>
+              <circle cx="0" cy="-47" r="14" fill="#FFCB8B" opacity="0.6"/>
+            </g>
+
+            <!-- mini ROV assisting (top right) -->
+            <g class="build-rov" transform="translate(900 320)">
+              <rect x="-40" y="-22" width="80" height="44" rx="4" fill="url(#manifoldBox)" stroke="#0A1A2E" stroke-width="2"/>
+              <rect x="-40" y="-22" width="80" height="3" fill="#0A1A2E"/>
+              <rect x="-40" y="19" width="80" height="3" fill="#0A1A2E"/>
+              <text x="0" y="3" font-family="Space Grotesk" font-weight="800" font-size="6" letter-spacing="1" fill="#0A1A2E" text-anchor="middle">ROV-B</text>
+              <circle cx="-46" cy="-5" r="6" fill="#FAFAFA" stroke="#0A1A2E" stroke-width="1.5"/>
+              <circle cx="-46" cy="-5" r="3" fill="#FFE6B3"/>
+              <!-- light beam -->
+              <path d="M-50,-3 L-200,80 L-200,-90 L-50,-7 Z" fill="url(#rovBeam)"/>
+              <!-- tether up -->
+              <line x1="0" y1="-22" x2="20" y2="-200" stroke="#FFD600" stroke-width="2" opacity="0.8"/>
+            </g>
+          </svg>
+
+          <!-- multi-channel HUD (busy operation) -->
+          <div class="build-hud">
+            <div class="build-hud__title">SUBSEA CONSTRUCTION · LIVE</div>
+            <div class="build-hud__op"><span class="dot dot--green"></span> DIVER-1 · flange torque</div>
+            <div class="build-hud__op"><span class="dot dot--green"></span> DIVER-2 · alignment check</div>
+            <div class="build-hud__op"><span class="dot dot--orange"></span> ROV-B · video coverage</div>
+            <div class="build-hud__op"><span class="dot dot--blue"></span> CRANE-A · holding load</div>
+            <div class="build-hud__rec">● REC · 14:48 · M-04</div>
+          </div>
+        </div>
+      </div>
+
       <!-- ─── OVERLAY 5: END CARD — credits ───────────── -->
       <div class="ov ov--end" id="ov-end" aria-hidden="true">
         <div class="ov__bg ov__bg--end">
@@ -1256,19 +1530,25 @@
           <span class="chapter__num">04</span><span class="chapter__name">STATION</span>
         </button>
         <button class="chapter" data-scene="4" title="Subsea Dive">
-          <span class="chapter__num">05</span><span class="chapter__name">SUBSEA</span>
+          <span class="chapter__num">05</span><span class="chapter__name">DIVE</span>
         </button>
-        <button class="chapter" data-scene="5" title="The Report">
-          <span class="chapter__num">06</span><span class="chapter__name">REPORT</span>
+        <button class="chapter" data-scene="5" title="ROV Intervention">
+          <span class="chapter__num">06</span><span class="chapter__name">ROV</span>
         </button>
-        <button class="chapter" data-scene="6" title="The Invoice">
-          <span class="chapter__num">07</span><span class="chapter__name">INVOICE</span>
+        <button class="chapter" data-scene="6" title="Subsea Construction">
+          <span class="chapter__num">07</span><span class="chapter__name">BUILD</span>
         </button>
-        <button class="chapter" data-scene="7" title="Payables">
-          <span class="chapter__num">08</span><span class="chapter__name">AP</span>
+        <button class="chapter" data-scene="7" title="The Report">
+          <span class="chapter__num">08</span><span class="chapter__name">REPORT</span>
         </button>
-        <button class="chapter" data-scene="8" title="The Quiet">
-          <span class="chapter__num">09</span><span class="chapter__name">QUIET</span>
+        <button class="chapter" data-scene="8" title="The Invoice">
+          <span class="chapter__num">09</span><span class="chapter__name">INVOICE</span>
+        </button>
+        <button class="chapter" data-scene="9" title="Payables">
+          <span class="chapter__num">10</span><span class="chapter__name">AP</span>
+        </button>
+        <button class="chapter" data-scene="10" title="The Quiet">
+          <span class="chapter__num">11</span><span class="chapter__name">QUIET</span>
         </button>
       </div>
 

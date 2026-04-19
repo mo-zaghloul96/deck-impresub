@@ -781,7 +781,7 @@
   const chyronTitle = () => document.querySelector('.chyron__title');
   const progressBar = () => document.getElementById('progress-bar');
 
-  const ALL_OVERLAYS = ['ov-cairo', 'ov-process', 'ov-mob', 'ov-uw'];
+  const ALL_OVERLAYS = ['ov-cairo', 'ov-process', 'ov-mob', 'ov-uw', 'ov-rov', 'ov-build', 'ov-end'];
 
   function setChyron(num, title) {
     if (chyronNum())   chyronNum().textContent = num;
@@ -962,13 +962,62 @@
     setProgress(70);
     await wait(1200);
 
-    await cycleChatIn(`3 photos captured. Surfacing to hand off to Marco. 🫧`, 500);
+    await cycleChatIn(`3 photos captured. Switching to ROV for the wellhead inspection. 🤖`, 500);
     await wait(1500);
 
-    // ═══════ SCENE 06 — MARCO REPORTS (ON THE VESSEL) ═══════
+    // ═══════ SCENE 06 — ROV INTERVENTION (deep wellhead) ═══════
+    showOverlay('ov-rov');
+    setChyron('SCENE 06 / 11', 'ROV-A · −180 m — WELLHEAD INSPECTION');
+    setProgress(72);
+    await wait(1200);
+
+    await cycleChatIn(`<strong>ROV-A on station.</strong> Inspecting wellhead <em>XT-WELL A-12</em> at −180 m. Live video streaming.`, 700);
+    pushActivity({ title: '🤖 ROV-A mission live · <b>ROV-2026-0247</b>', meta: 'XT-WELL A-12 · −180m · pilot in vessel control room' });
+    await wait(1600);
+
+    pushActivity({ title: '✓ Valve A torque-check passed', meta: 'Manipulator engaged · 78 Nm · in spec', ok: true });
+    await wait(1400);
+    pushActivity({ title: '✓ Valve B visual-clear', meta: 'No leak · paint condition: good', ok: true });
+    setProgress(78);
+    await wait(1600);
+
+    await cycleChatIn(`Wellhead clear. Auto-filing the ROV mission report.`, 600);
+    await cycleCard('ROV MISSION REPORT', [
+      ['Mission', 'ROV-2026-0247', false],
+      ['Asset',   'XT-WELL A-12 · Block 9', true],
+      ['Depth',   '−180 m · 32 min on station', true],
+      ['Findings','2 valves torque-tested · all in spec', false],
+      ['Video',   '32 min · 4K · 124 GB · linked', true],
+      ['Status',  'CLOSED — assets healthy', false],
+    ], 'ROV INTERVENTION · INSPECTION');
+    setProgress(82);
+    await wait(1400);
+
+    // ═══════ SCENE 07 — SUBSEA CONSTRUCTION (manifold install) ═══════
+    showOverlay('ov-build');
+    setChyron('SCENE 07 / 11', 'SUBSEA CONSTRUCTION — MANIFOLD M-04');
+    setProgress(85);
+    await wait(1200);
+
+    await cycleChatIn(`<strong>Manifold M-04</strong> being lowered. 2 divers + ROV-B in support. Crane holding 14 t.`, 700);
+    pushActivity({ title: '🏗 Subsea construction op started', meta: '2 divers · 1 ROV · crane load 14t · target depth −95m' });
+    await wait(1700);
+
+    pushActivity({ title: '✓ Diver-1 · flange torque applied', meta: 'North inlet · 240 Nm · 4 bolts complete', ok: true });
+    await wait(1400);
+    pushActivity({ title: '✓ Diver-2 · alignment confirmed', meta: 'M-04 aligned to pipeline tie-in within 4 mm tolerance', ok: true });
+    await wait(1400);
+    pushActivity({ title: '✓ ROV-B · video coverage complete', meta: '46 min · multi-angle · uploaded', ok: true });
+    setProgress(89);
+    await wait(1300);
+
+    await cycleChatIn(`Manifold seated. Two flanges torqued. ROV-B has full video. Surfacing for daily report.`, 700);
+    await wait(1600);
+
+    // ═══════ SCENE 08 — MARCO REPORTS (ON THE VESSEL) ═══════
     showVesselScene();
-    setChyron('SCENE 06 / 09', 'ON DECK — THE REPORT');
-    setProgress(75);
+    setChyron('SCENE 08 / 11', 'ON DECK — THE REPORT');
+    setProgress(91);
     await wait(1200);
 
     await cycleChatOut('📷 [Ahmed shared 3 photos]');
@@ -983,14 +1032,14 @@
 
     await window._handle('__send_report');
     flashBeam(1600);
-    pushActivity({ title: '✓ Daily Report <b>DR-24817</b> filed', meta: 'Photos attached · Marco Colombo · Supervisor notified', ok: true });
-    setProgress(82);
+    pushActivity({ title: '✓ Daily Report <b>DR-24817</b> filed', meta: 'Dive + ROV + construction logs bundled · Supervisor notified', ok: true });
+    setProgress(94);
     await wait(1800);
 
-    // ═══════ SCENE 07 — INVOICE: DPR APPROVED → INVOICE ISSUED ═══════
-    showVesselScene();  // stay on vessel but overlay new messages
-    setChyron('SCENE 07 / 09', 'THE INVOICE — AUTO-BILLED');
-    setProgress(86);
+    // ═══════ SCENE 09 — INVOICE: DPR APPROVED → INVOICE ISSUED ═══════
+    showVesselScene();
+    setChyron('SCENE 09 / 11', 'THE INVOICE — AUTO-BILLED');
+    setProgress(95);
     await wait(900);
 
     await cycleChatIn(`📋 <strong>DPR-014 approved</strong> by PetroJet. Triggering invoice automatically.`, 700);
@@ -1007,13 +1056,13 @@
     ], 'AUTO-BILLING · DPR-TRIGGERED');
 
     pushActivity({ title: '📤 <b>INV-2026-0044</b> sent · $620,000', meta: 'CFO notified · AR aging updated', ok: true });
-    setProgress(91);
+    setProgress(97);
     await wait(1800);
 
-    // ═══════ SCENE 08 — PAYABLES: SUPPLIER → PO → AP ═══════
+    // ═══════ SCENE 10 — PAYABLES: SUPPLIER → PO → AP ═══════
     showVesselScene();
-    setChyron('SCENE 08 / 09', 'PAYABLES — AUTO-ROUTED');
-    setProgress(94);
+    setChyron('SCENE 10 / 11', 'PAYABLES — AUTO-ROUTED');
+    setProgress(98);
     await wait(900);
 
     await cycleChatIn(`📨 Supplier invoice received: <em>Al-Bahar Marine</em> · $84,500 · PRJ-2026-0118.<br/>Extracted, creating PO.`, 800);
@@ -1030,11 +1079,11 @@
     ], 'AP AUTOMATION · VENDOR-MATCHED');
 
     pushActivity({ title: '✓ <b>PO-04481</b> created · sent for approval', meta: 'Routed to CFO & COO · AP aging queued', ok: true });
-    setProgress(98);
+    setProgress(99);
     await wait(2000);
 
-    // ═══════ SCENE 09 — THE QUIET (close) ═══════
-    setChyron('SCENE 09 / 09', 'THE QUIET — ONE AGENT, ONE THREAD');
+    // ═══════ SCENE 11 — THE QUIET (close) ═══════
+    setChyron('SCENE 11 / 11', 'THE QUIET — ONE AGENT, ONE THREAD');
     setProgress(100);
     await window._handle('__done');
     await wait(2200);
@@ -1435,26 +1484,30 @@
   const T = {
     chyrons: {
       en: [
-        ['SCENE 01 / 09', 'CAIRO HQ — THE INTAKE'],
-        ['SCENE 02 / 09', 'THE SETUP — TECH · COST · QUOTE · AWARD'],
-        ['SCENE 03 / 09', 'PORT SAID — MOBILIZATION'],
-        ['SCENE 04 / 09', 'BLOCK 9 — ON STATION'],
-        ['SCENE 05 / 09', 'SUBSEA · −42 m — THE DIVE'],
-        ['SCENE 06 / 09', 'ON DECK — THE REPORT'],
-        ['SCENE 07 / 09', 'THE INVOICE — AUTO-BILLED'],
-        ['SCENE 08 / 09', 'PAYABLES — AUTO-ROUTED'],
-        ['SCENE 09 / 09', 'THE QUIET — ONE AGENT, ONE THREAD'],
+        ['SCENE 01 / 11', 'CAIRO HQ — THE INTAKE'],
+        ['SCENE 02 / 11', 'THE SETUP — TECH · COST · QUOTE · AWARD'],
+        ['SCENE 03 / 11', 'PORT SAID — MOBILIZATION'],
+        ['SCENE 04 / 11', 'BLOCK 9 — ON STATION'],
+        ['SCENE 05 / 11', 'SUBSEA · −42 m — THE DIVE'],
+        ['SCENE 06 / 11', 'ROV-A · −180 m — WELLHEAD INSPECTION'],
+        ['SCENE 07 / 11', 'SUBSEA CONSTRUCTION — MANIFOLD M-04'],
+        ['SCENE 08 / 11', 'ON DECK — THE REPORT'],
+        ['SCENE 09 / 11', 'THE INVOICE — AUTO-BILLED'],
+        ['SCENE 10 / 11', 'PAYABLES — AUTO-ROUTED'],
+        ['SCENE 11 / 11', 'THE QUIET — ONE AGENT, ONE THREAD'],
       ],
       ar: [
-        ['مشهد ٠١ / ٠٩', 'مقر القاهرة — استلام المشروع'],
-        ['مشهد ٠٢ / ٠٩', 'الإعداد — فني · تكلفة · عرض · ترسية'],
-        ['مشهد ٠٣ / ٠٩', 'بورسعيد — التعبئة'],
-        ['مشهد ٠٤ / ٠٩', 'البلوك ٩ — على الموقع'],
-        ['مشهد ٠٥ / ٠٩', 'تحت الماء · ‎−٤٢‎ م — الغوص'],
-        ['مشهد ٠٦ / ٠٩', 'على السطح — التقرير'],
-        ['مشهد ٠٧ / ٠٩', 'الفاتورة — تلقائيًا'],
-        ['مشهد ٠٨ / ٠٩', 'المستحقات — توجيه ذكي'],
-        ['مشهد ٠٩ / ٠٩', 'الهدوء — وكيل واحد · محادثة واحدة'],
+        ['مشهد ٠١ / ١١', 'مقر القاهرة — استلام المشروع'],
+        ['مشهد ٠٢ / ١١', 'الإعداد — فني · تكلفة · عرض · ترسية'],
+        ['مشهد ٠٣ / ١١', 'بورسعيد — التعبئة'],
+        ['مشهد ٠٤ / ١١', 'البلوك ٩ — على الموقع'],
+        ['مشهد ٠٥ / ١١', 'تحت الماء · ‎−٤٢‎ م — الغوص'],
+        ['مشهد ٠٦ / ١١', 'الـ ROV · ‎−١٨٠‎ م — فحص رأس البئر'],
+        ['مشهد ٠٧ / ١١', 'إنشاءات تحت الماء — مجمع M-04'],
+        ['مشهد ٠٨ / ١١', 'على السطح — التقرير'],
+        ['مشهد ٠٩ / ١١', 'الفاتورة — تلقائيًا'],
+        ['مشهد ١٠ / ١١', 'المستحقات — توجيه ذكي'],
+        ['مشهد ١١ / ١١', 'الهدوء — وكيل واحد · محادثة واحدة'],
       ]
     },
     ticker: {
